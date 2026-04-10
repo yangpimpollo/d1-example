@@ -30,7 +30,7 @@ El sistema de ventas es una api restfull tendra 5 categorias principales:
 Tener en cuenta que <mark>{ orden de creacion de tablas afecta }</mark> lo cual tenemos que definir inicialmente como de crearan las migraciones y la factoria de datos. empezamos por crear `tablas independientes` luego `dependencias simples` al final `con dependencias cruzadas` si alguna vez hay dependencia circular es mejor que FK sea nullable se podria leer mas sobre eso aun que es mala practica
 orden de creacion de tablas:                                 
 1. categories, customers, products, stores
-2. staff(depende stores)
+2. staff(depende stores), inventory(depende de stores y product)
 3. orders y order_items
 
 A primer plantemiento es tener las funciones basicas en funcionamiento lo cual se decide empezar con una semilla de `50 tiendas` , `5 categorias` , `50 productos`
@@ -73,10 +73,9 @@ php artisan db:seed
 php artisan make:model Store -mfsc --api
 php artisan migrate:refresh --seed
 ```
-### 2️⃣. 
-
-
+### 2️⃣. Inventory y Staff
 ```bash
+php artisan make:model Inventory -mfsc --api
 
 ```
 

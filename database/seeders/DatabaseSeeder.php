@@ -15,6 +15,10 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CustomerSeeder::class,
             StoreSeeder::class,
+
+            // ProductSeeder::class, --- IGNORE ---
+
+            InventorySeeder::class,  // ← después de stores y products
         ]);
     }
 }
