@@ -79,6 +79,16 @@ php artisan make:model Inventory -mfsc --api
 php artisan migrate:refresh --seed
 
 php artisan make:model Staff -mfsc --api
+php artisan migrate:refresh --seed
+php artisan db:seed
 ```
+### 3️⃣. Inventory y Staff
+```bash
+php artisan make:model Order -mfsc --api
+php artisan migrate:refresh --seed
 
+php artisan make:model Staff -mfsc --api
+php artisan migrate:refresh --seed
+php artisan db:seed
+```
 

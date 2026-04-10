@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
 
             InventorySeeder::class,  // ← después de stores y products
             StaffSeeder::class,      // ← después de stores
+            OrderSeeder::class,      // ← después de customers, stores y staffs
         ]);
     }
 }
