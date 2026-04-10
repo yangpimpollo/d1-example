@@ -82,13 +82,107 @@ php artisan make:model Staff -mfsc --api
 php artisan migrate:refresh --seed
 php artisan db:seed
 ```
-### 3️⃣. Inventory y Staff
+### 3️⃣. Order y OrderDetail
 ```bash
 php artisan make:model Order -mfsc --api
 php artisan migrate:refresh --seed
 
-php artisan make:model Staff -mfsc --api
+php artisan make:model OrderDetail -mfsc --api
 php artisan migrate:refresh --seed
 php artisan db:seed
+```
+
+obtenemos 
+```mermaid
+erDiagram
+    direction LR
+
+    STAFFS {
+        string dni PK
+        string firstname
+        string lastname
+        string email
+        string phone
+        date birthdate
+        string gender
+        string address
+        string store_id FK
+        string role
+        datetime email_verified_at
+        string password
+        string remember_token
+        datetime created_at
+        datetime updated_at
+    }
+
+    STORES {
+        string id PK
+        string store_name
+        string address
+        string city
+        string state
+    }
+
+    CUSTOMERS {
+        string dni PK
+        string firstname
+        string lastname
+        date birthdate
+        string gender
+        string email
+        string phone
+        string address
+        string city
+        string state
+    }
+
+    ORDERS {
+        string order_id PK
+        datetime order_date
+        string customer_id FK
+        string store_id FK
+        string staff_id FK
+        datetime created_at
+        datetime updated_at
+    }
+
+    ORDER_DETAILS {
+        string order_id FK
+        string product_id FK
+        int quantity
+        decimal sub_total
+        datetime created_at
+        datetime updated_at
+    }
+
+    PRODUCTS {
+        string product_id PK
+        string category_id FK
+        string product_name
+        string description
+        decimal product_price
+    }
+
+    CATEGORIES {
+        string category_id PK
+        string category_name
+    }
+
+    INVENTORIES {
+        string store_id FK
+        string product_id FK
+        int quantity
+    }
+
+    %% Relationships - Horizontal flow
+    STAFFS ||--o{ STORES : "works_at"
+    CUSTOMERS ||--o{ ORDERS : "places"
+    ORDERS ||--|{ ORDER_DETAILS : "contains"
+    ORDER_DETAILS }|--|| PRODUCTS : "of"
+    PRODUCTS ||--o{ CATEGORIES : "belongs_to"
+    STORES ||--o{ INVENTORIES : "has"
+    INVENTORIES }o--|| PRODUCTS : "stock_of"
+    ORDERS }o--|| STORES : "at"
+    ORDERS }o--|| STAFFS : "by"
 ```
 

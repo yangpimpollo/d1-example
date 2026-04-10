@@ -15,6 +15,6 @@ class Inventory extends Model
     public $incrementing = false;
     protected $primaryKey = null;
 
-    public function store() { return $this->belongsTo(Store::class); } 
-    public function product() { return $this->belongsTo(Product::class); }
+    public function store() { return $this->belongsTo(Store::class, 'store_id', 'id'); } 
+    public function product() { return $this->belongsTo(Product::class, 'product_id', 'product_id'); }
 }

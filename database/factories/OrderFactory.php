@@ -16,8 +16,9 @@ class OrderFactory extends Factory
     {
         
         $customerIds = Customer::pluck('dni')->all();
-        $storeIds = Store::pluck('id')->all();
-        $staffIds = Staff::pluck('dni')->all();
+        $randomStaff = Staff::inRandomOrder()->first();
+        $storeId = $randomStaff->store_id;
+        $staffDni = $randomStaff->dni;
 
 
 
@@ -25,8 +26,8 @@ class OrderFactory extends Factory
             'order_id' => $this->faker->unique()->bothify('B0##-00#####'),
             'order_date' => $this->faker->date(),
             'customer_id' => $this->faker->randomElement($customerIds),
-            'store_id' => $this->faker->randomElement($storeIds),
-            'staff_id' => $this->faker->randomElement($staffIds),
+            'store_id' => $storeId,
+            'staff_id' => $staffDni,
         ];
     }
 }

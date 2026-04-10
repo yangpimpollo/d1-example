@@ -19,19 +19,9 @@ class Order extends Model
         'staff_id',
     ];
 
-    public function customer()
-    {
-        return $this->belongsTo(Customer::class, 'customer_id', 'dni');
-    }
-
-    public function store()
-    {
-        return $this->belongsTo(Store::class, 'store_id', 'id');
-    }
-
-    public function staff()
-    {
-        return $this->belongsTo(Staff::class, 'staff_id', 'dni');
-    }
+    public function customer(){ return $this->belongsTo(Customer::class, 'customer_id', 'dni'); }
+    public function store(){ return $this->belongsTo(Store::class, 'store_id', 'id'); }
+    public function staff(){ return $this->belongsTo(Staff::class, 'staff_id', 'dni'); }
+    public function orderDetails() { return $this->hasMany(OrderDetail::class, 'order_id', 'order_id'); }
 
 }

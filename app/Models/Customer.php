@@ -15,4 +15,8 @@ class Customer extends Model
     public $incrementing = false;
     public $timestamps = false;
     protected $fillable = ['dni', 'firstname', 'lastname', 'birthdate', 'gender', 'email', 'phone', 'address', 'city', 'state'];
+
+                                            //                  FK en orders     PK en customers
+    public function orders() { return $this->hasMany(Order::class, 'customer_id', 'dni'); }
+    
 }
