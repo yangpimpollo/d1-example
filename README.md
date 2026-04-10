@@ -76,7 +76,9 @@ php artisan migrate:refresh --seed
 ### 2️⃣. Inventory y Staff
 ```bash
 php artisan make:model Inventory -mfsc --api
+php artisan migrate:refresh --seed
 
+php artisan make:model Staff -mfsc --api
 ```
 
 
