@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
@@ -25,9 +26,30 @@ class ProductController extends Controller
         return Product::create($request->all());
     }
 
-    public function show(Product $product)
+    public function show(Request $request, Product $product) 
     {
-        return $product;
+        $staff = $request->user();
+        $store_id = $staff->store_id;
+
+        $data = DB::table('products')
+            ->join('inventories', 'products.product_id', '=', 'inventories.product_id')
+            ->where('products.product_id', $product->product_id) 
+            ->where('inventories.store_id', $store_id)
+            ->select(
+                'products.product_id as id', 
+                'products.product_name as nombre', 
+                'products.product_price as price',
+                'inventories.quantity as stock'
+            )
+            ->first();
+
+        if (!$data) {
+            return response()->json([
+                'message' => 'Producto sin existencias en esta tienda',
+            ], 404);
+        }
+
+        return response()->json($data);
     }
 
     public function update(Request $request, Product $product)
@@ -47,6 +69,7 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         $product->delete();
-        return response()->json(['message' => 'Product deleted successfully'], 204);
+        return response()->json(['message' => 'Product deleted successfully'], 200);
     }
+
 }

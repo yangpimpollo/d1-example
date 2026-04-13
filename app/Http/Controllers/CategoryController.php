@@ -15,7 +15,7 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'category_id' => 'required|unique:categories,id',
+            'category_id' => 'required|unique:categories,category_id',
             'category_name' => 'required'
         ]);
 
@@ -30,7 +30,7 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category)
     {
         $request->validate([
-            'category_id' => 'sometimes|required|unique:categories,id',
+            'category_id' => 'sometimes|required|unique:categories,category_id',
             'category_name' => 'sometimes|required'
         ]);
 
@@ -41,6 +41,6 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
         $category->delete();
-        return response()->json(['message' => 'Category deleted successfully'], 204);
+        return response()->json(['message' => 'Category deleted successfully'], 200);
     }
 }

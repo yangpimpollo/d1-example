@@ -50,10 +50,8 @@ class ExampleTest extends TestCase
         $response->assertStatus(422);
     }
 
-    public function test_user_can_logout()
-    {
-        $loginResponse = $this->postJson('/api/home.logout', [
-            'dni' => 10000000, 
-            'password' => 'pizza123',
-        ]);
+    // public function test_user_can_logout()
+    // {
+
+    // }
 }

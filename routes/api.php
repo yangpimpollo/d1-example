@@ -14,38 +14,40 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\OrderDetailController;
 
 // pagina de inicio [testeado ✅]
-Route::get('/home', function (Request $request) { return response()->json([ 'message' => 'Welcome ComePizza!🍕 API','by' => 'yangpimpollo' ]); });
-Route::get('/home.login', function (Request $request) { return response()->json([ 'message' => 'iniciar sección']); });
+Route::get('/home', [AuthController::class, 'home_welcome']);
+Route::get('/home.login', [AuthController::class, 'home_login']);
 Route::post('/home.login', [AuthController::class, 'login']);     //->middleware('throttle:10,1');    usa cache para limitar intentos de inicio de sesión
 
 Route::middleware('auth:sanctum')->group(function () {
 
-    // cierre de sesión
-    Route::post('/logout', [AuthController::class, 'logout']);
+    Route::get('/user', function (Request $request) { return response()->json($request->user()); });
+
+    // zona de panel
+    Route::get('/panel', [AuthController::class, 'home_dashboard']);
+    Route::post('/panel.logout', [AuthController::class, 'logout']);
 
     // 1. Rutas de administración
-    Route::apiResource('staffs', StaffController::class);
-    Route::apiResource('stores', StoreController::class);
-    Route::apiResource('categories', CategoryController::class);
+    Route::apiResource('/panel/manage/staff', StaffController::class);
+    Route::apiResource('/panel/manage/store', StoreController::class);
+    Route::apiResource('/panel/manage/category', CategoryController::class);
 
     // 2. Rutas de clientes
-    Route::apiResource('customers', CustomerController::class);
+    Route::apiResource('/panel/clientes/customer', CustomerController::class);
 
     // 3. Gestion de inventario   
-    Route::apiResource('inventories', InventoryController::class);
+    Route::apiResource('/panel/almacen/inventory', InventoryController::class);
 
     // 4. Catalogo de productos
-    Route::apiResource('products', ProductController::class);
+    Route::apiResource('/panel/buscador/product', ProductController::class);
+    Route::get('/panel/buscador/product/{buscador_product}/store/{store_id}', [ProductController::class, 'search']); // Ruta para búsqueda personalizada de productos
 
     // 5. Procesamiento de ventas
-    Route::apiResource('orders', OrderController::class);
-    Route::apiResource('orders.order-details', OrderDetailController::class);
+    Route::apiResource('/panel/ventas/order', OrderController::class);
+    Route::apiResource('/panel/ventas/orders.order-detail', OrderDetailController::class);
     
+
 });
 
 
 
-
-    // Route::get('/user', function (Request $request) {
-    //     return $request->user();
-    // });
+    Route::get('/user', function (Request $request) { return $request->user(); });

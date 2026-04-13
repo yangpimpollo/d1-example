@@ -15,7 +15,7 @@ class CustomerController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'dni' => 'required|unique:customers,dni|digits:8',
+            'dni' => 'required|unique:customers,dni',
             'firstname' => 'required',
             'lastname' => 'required'
         ]);
@@ -43,6 +43,6 @@ class CustomerController extends Controller
     public function destroy(Customer $customer)
     {
         $customer->delete();
-        return response()->json(['message' => 'Customer deleted successfully'], 204);
+        return response()->json(['message' => 'Customer deleted successfully'], 200);
     }
 }

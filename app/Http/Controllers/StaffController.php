@@ -16,7 +16,7 @@ class StaffController extends Controller
     public function store(Request $request)
     {
         $request->validate([ 
-            'dni' => 'required|unique:staff,dni|digits:8',
+            'dni' => 'required|unique:staffs,dni|digits:8',
             'firstname' => 'required',
             'lastname' => 'required',
             'password' => 'required',
@@ -34,7 +34,7 @@ class StaffController extends Controller
     public function update(Request $request, Staff $staff)
     {
         $request->validate([ 
-            'dni' => 'sometimes|required|unique:staff,dni|digits:8',
+            'dni' => 'sometimes|required|unique:staffs,dni|digits:8',
             'firstname' => 'sometimes|required',
             'lastname' => 'sometimes|required',
             'password' => 'sometimes|required',
@@ -49,6 +49,6 @@ class StaffController extends Controller
     public function destroy(Staff $staff)
     {
         $staff->delete();
-        return response()->json(['message' => 'staff eliminado exitosamente'], 204);
+        return response()->json(['message' => 'staff eliminado exitosamente'], 200);
     }
 }

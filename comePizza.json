@@ -1,0 +1,2209 @@
+[
+  {
+    "v": 11,
+    "name": "Proyecto ComePizza!🍕 API",
+    "folders": [
+      {
+        "v": 11,
+        "name": "home",
+        "folders": [],
+        "requests": [
+          {
+            "v": "17",
+            "name": "welcome",
+            "method": "GET",
+            "endpoint": "http://127.0.0.1:8000/api/home",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "requestVariables": [],
+            "responses": {
+              "welcome": {
+                "name": "welcome",
+                "originalRequest": {
+                  "v": "6",
+                  "name": "welcome",
+                  "method": "GET",
+                  "endpoint": "http://127.0.0.1:8000/api/home",
+                  "headers": [],
+                  "params": [],
+                  "body": {
+                    "contentType": null,
+                    "body": null
+                  },
+                  "auth": {
+                    "authType": "none",
+                    "authActive": true
+                  },
+                  "requestVariables": []
+                },
+                "status": "200 OK",
+                "code": 200,
+                "headers": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Connection",
+                    "value": "close"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache, private"
+                  },
+                  {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                  },
+                  {
+                    "key": "Host",
+                    "value": "127.0.0.1:8000"
+                  },
+                  {
+                    "key": "Date",
+                    "value": "Mon, 13 Apr 2026 16:16:56 GMT"
+                  },
+                  {
+                    "key": "X-Powered-By",
+                    "value": "PHP/8.5.4"
+                  }
+                ],
+                "body": "{\"message\":\"Welcome ComePizza!\\ud83c\\udf55 API\",\"by\":\"yangpimpollo\"}"
+              }
+            },
+            "description": "pagina de bienvenida"
+          },
+          {
+            "v": "17",
+            "name": "login",
+            "method": "GET",
+            "endpoint": "http://127.0.0.1:8000/api/home.login",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "requestVariables": [],
+            "responses": {
+              "login": {
+                "name": "login",
+                "originalRequest": {
+                  "v": "6",
+                  "name": "login",
+                  "method": "GET",
+                  "endpoint": "http://127.0.0.1:8000/api/home.login",
+                  "headers": [],
+                  "params": [],
+                  "body": {
+                    "contentType": null,
+                    "body": null
+                  },
+                  "auth": {
+                    "authType": "none",
+                    "authActive": true
+                  },
+                  "requestVariables": []
+                },
+                "status": "200 OK",
+                "code": 200,
+                "headers": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                  },
+                  {
+                    "key": "Host",
+                    "value": "127.0.0.1:8000"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache, private"
+                  },
+                  {
+                    "key": "Connection",
+                    "value": "close"
+                  },
+                  {
+                    "key": "X-Powered-By",
+                    "value": "PHP/8.5.4"
+                  },
+                  {
+                    "key": "Date",
+                    "value": "Mon, 13 Apr 2026 16:18:34 GMT"
+                  }
+                ],
+                "body": "{\"message\":\"iniciar secci\\u00f3n\"}"
+              }
+            },
+            "description": "pagina de login"
+          },
+          {
+            "v": "17",
+            "name": "login",
+            "method": "POST",
+            "endpoint": "http://127.0.0.1:8000/api/home.login",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \"dni\": \"10000000\",\n  \"password\": \"pizza123\"\n}"
+            },
+            "requestVariables": [],
+            "responses": {
+              "login": {
+                "name": "login",
+                "originalRequest": {
+                  "v": "6",
+                  "name": "login",
+                  "method": "POST",
+                  "endpoint": "http://127.0.0.1:8000/api/home.login",
+                  "headers": [],
+                  "params": [],
+                  "body": {
+                    "contentType": "application/json",
+                    "body": "{\n  \"dni\": \"10000000\",\n  \"password\": \"pizza123\"\n}"
+                  },
+                  "auth": {
+                    "authType": "none",
+                    "authActive": true
+                  },
+                  "requestVariables": []
+                },
+                "status": "200 OK",
+                "code": 200,
+                "headers": [
+                  {
+                    "key": "Date",
+                    "value": "Mon, 13 Apr 2026 16:20:50 GMT"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Connection",
+                    "value": "close"
+                  },
+                  {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                  },
+                  {
+                    "key": "Host",
+                    "value": "127.0.0.1:8000"
+                  },
+                  {
+                    "key": "X-Powered-By",
+                    "value": "PHP/8.5.4"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache, private"
+                  }
+                ],
+                "body": "{\"message\":\"Login exitoso\",\"user\":{\"dni\":10000000,\"firstname\":\"default_name\",\"lastname\":\"dafault_lastname\",\"email\":\"default@example.com\",\"phone\":null,\"birthdate\":null,\"gender\":null,\"address\":null,\"store_id\":\"AA-AAA-00\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":null,\"updated_at\":null},\"token\":\"3|xytsmG69UABcVcacOacHx2dm2BKvf84nfQASxtEc78dd8ce4\"}"
+              }
+            },
+            "description": "ingreso "
+          }
+        ],
+        "auth": {
+          "authActive": true,
+          "authType": "inherit"
+        },
+        "headers": [],
+        "variables": [],
+        "description": null
+      },
+      {
+        "v": 11,
+        "name": "Panel",
+        "folders": [
+          {
+            "v": 11,
+            "name": "manage",
+            "folders": [
+              {
+                "v": 11,
+                "name": "staff",
+                "folders": [],
+                "requests": [
+                  {
+                    "v": "17",
+                    "name": "all staff",
+                    "method": "GET",
+                    "endpoint": "http://127.0.0.1:8000/api/panel/manage/staff",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "bearer",
+                      "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {
+                      "all staff": {
+                        "name": "all staff",
+                        "originalRequest": {
+                          "v": "6",
+                          "name": "all staff",
+                          "method": "GET",
+                          "endpoint": "http://127.0.0.1:8000/api/panel/manage/staff",
+                          "headers": [],
+                          "params": [],
+                          "body": {
+                            "contentType": null,
+                            "body": null
+                          },
+                          "auth": {
+                            "authType": "bearer",
+                            "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                            "authActive": true
+                          },
+                          "requestVariables": []
+                        },
+                        "status": "200 OK",
+                        "code": 200,
+                        "headers": [
+                          {
+                            "key": "Host",
+                            "value": "127.0.0.1:8000"
+                          },
+                          {
+                            "key": "Cache-Control",
+                            "value": "no-cache, private"
+                          },
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Date",
+                            "value": "Mon, 13 Apr 2026 17:09:18 GMT"
+                          },
+                          {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                          },
+                          {
+                            "key": "Connection",
+                            "value": "close"
+                          },
+                          {
+                            "key": "X-Powered-By",
+                            "value": "PHP/8.5.4"
+                          }
+                        ],
+                        "body": "[{\"dni\":10000000,\"firstname\":\"default_name\",\"lastname\":\"dafault_lastname\",\"email\":\"default@example.com\",\"phone\":null,\"birthdate\":null,\"gender\":null,\"address\":null,\"store_id\":\"AA-AAA-00\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":null,\"updated_at\":null},{\"dni\":66375976,\"firstname\":\"Hugo\",\"lastname\":\"Angulo Collazo\",\"email\":\"scarrasquillo@example.com\",\"phone\":\"+34 934-77-3909\",\"birthdate\":\"1977-09-09\",\"gender\":\"male\",\"address\":\"Pla\\u00e7a Pilar, 7, Bajos\",\"store_id\":\"JY-CPY-33\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":94496703,\"firstname\":\"Encarnaci\\u00f3n\",\"lastname\":\"Correa Tello\",\"email\":\"raquel06@example.org\",\"phone\":\"914 39 4990\",\"birthdate\":\"1971-05-16\",\"gender\":\"female\",\"address\":\"Avenida Sonia, 7, 0\\u00ba B\",\"store_id\":\"QM-LPR-35\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":59209198,\"firstname\":\"Jorge\",\"lastname\":\"Redondo De la Fuente\",\"email\":\"eandreu@example.org\",\"phone\":\"906 672841\",\"birthdate\":\"1974-07-26\",\"gender\":\"male\",\"address\":\"Carrer Arguello, 77, 03\\u00ba 0\\u00ba\",\"store_id\":\"UR-CPR-37\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":88753966,\"firstname\":\"Arnau\",\"lastname\":\"Jurado Robles\",\"email\":\"mariapilar87@example.com\",\"phone\":\"945 78 7145\",\"birthdate\":\"1982-09-12\",\"gender\":\"male\",\"address\":\"Praza \\u00c1vila, 45, 10\\u00ba F\",\"store_id\":\"VQ-KKL-40\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":15419741,\"firstname\":\"Juan\",\"lastname\":\"Carranza Murillo\",\"email\":\"rayan.puig@example.org\",\"phone\":\"973-232082\",\"birthdate\":\"1984-09-22\",\"gender\":\"male\",\"address\":\"Travessera Ant\\u00f3n, 879, Bajo 5\\u00ba\",\"store_id\":\"QM-LPR-35\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":50727625,\"firstname\":\"Jorge\",\"lastname\":\"Collado Cort\\u00e9s\",\"email\":\"alonzo.miriam@example.com\",\"phone\":\"942 07 8097\",\"birthdate\":\"1997-09-30\",\"gender\":\"male\",\"address\":\"Avenida In\\u00e9s, 432, 9\\u00ba C\",\"store_id\":\"KS-HZB-95\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":87707589,\"firstname\":\"Nora\",\"lastname\":\"Benavides Carranza\",\"email\":\"ygonzalez@example.com\",\"phone\":\"983 217497\",\"birthdate\":\"1998-05-20\",\"gender\":\"female\",\"address\":\"Calle Cepeda, 9, 65\\u00ba E\",\"store_id\":\"RD-EEJ-78\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":65524164,\"firstname\":\"Aleix\",\"lastname\":\"Sevilla Carrera\",\"email\":\"dlazaro@example.com\",\"phone\":\"+34 992695177\",\"birthdate\":\"2005-03-31\",\"gender\":\"male\",\"address\":\"Ruela Antonio, 565, Bajo 8\\u00ba\",\"store_id\":\"XH-FSL-92\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":70089674,\"firstname\":\"Gerard\",\"lastname\":\"Plaza Collado\",\"email\":\"cristian.salinas@example.net\",\"phone\":\"912 257038\",\"birthdate\":\"1978-01-08\",\"gender\":\"male\",\"address\":\"Praza Arteaga, 146, Entre suelo 8\\u00ba\",\"store_id\":\"DR-UXZ-66\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":5650630,\"firstname\":\"Enrique\",\"lastname\":\"Casas Miranda\",\"email\":\"uvaldivia@example.net\",\"phone\":\"+34 989-99-1171\",\"birthdate\":\"1974-01-23\",\"gender\":\"male\",\"address\":\"Ruela Jos\\u00e9, 16, 8\\u00ba C\",\"store_id\":\"XQ-QMD-76\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":97183225,\"firstname\":\"Arnau\",\"lastname\":\"Mart\\u00edn Rasc\\u00f3n\",\"email\":\"jlorenzo@example.com\",\"phone\":\"+34 919 989675\",\"birthdate\":\"1990-08-06\",\"gender\":\"male\",\"address\":\"Praza Erik, 1, 84\\u00ba E\",\"store_id\":\"LE-MXF-47\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":23876806,\"firstname\":\"Rosa Mar\\u00eda\",\"lastname\":\"Cortez Mu\\u00f1oz\",\"email\":\"alicia87@example.com\",\"phone\":\"+34 905-36-2619\",\"birthdate\":\"1974-07-14\",\"gender\":\"female\",\"address\":\"Traves\\u00eda Mac\\u00edas, 80, 0\\u00ba E\",\"store_id\":\"WY-XPM-09\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":3754021,\"firstname\":\"Antonio\",\"lastname\":\"Rol\\u00f3n \\u00c1valos\",\"email\":\"beatriz.morales@example.org\",\"phone\":\"+34 939 67 1024\",\"birthdate\":\"1970-06-12\",\"gender\":\"male\",\"address\":\"R\\u00faa Gael, 742, 31\\u00ba A\",\"store_id\":\"QF-ZWF-67\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":70994008,\"firstname\":\"In\\u00e9s\",\"lastname\":\"Zepeda Carrero\",\"email\":\"luna09@example.net\",\"phone\":\"+34 969-089789\",\"birthdate\":\"1985-10-11\",\"gender\":\"female\",\"address\":\"Travessera Palomo, 6, 06\\u00ba E\",\"store_id\":\"LG-QPR-10\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":64270347,\"firstname\":\"Zoe\",\"lastname\":\"Fr\\u00edas Ram\\u00f3n\",\"email\":\"smontez@example.org\",\"phone\":\"949-913694\",\"birthdate\":\"1971-04-29\",\"gender\":\"female\",\"address\":\"Avinguda Valle, 2, 02\\u00ba 2\\u00ba\",\"store_id\":\"FS-OTK-77\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":10940558,\"firstname\":\"Sandra\",\"lastname\":\"Calvo Valle\",\"email\":\"nuria09@example.net\",\"phone\":\"994337292\",\"birthdate\":\"1975-08-17\",\"gender\":\"female\",\"address\":\"Praza Anaya, 6, 11\\u00ba D\",\"store_id\":\"WQ-XKZ-31\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":98721515,\"firstname\":\"Alexia\",\"lastname\":\"Pedroza Castillo\",\"email\":\"mariadolores35@example.com\",\"phone\":\"959 367443\",\"birthdate\":\"1980-04-24\",\"gender\":\"female\",\"address\":\"Avinguda Jos\\u00e9 Antonio, 98, 77\\u00ba F\",\"store_id\":\"JI-BBV-19\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":48415309,\"firstname\":\"Josefa\",\"lastname\":\"Vel\\u00e1squez Dom\\u00ednquez\",\"email\":\"olga.carrion@example.net\",\"phone\":\"+34 906 396322\",\"birthdate\":\"1981-04-14\",\"gender\":\"female\",\"address\":\"Pla\\u00e7a Sa\\u00fal, 129, 21\\u00ba 3\\u00ba\",\"store_id\":\"AA-AAA-00\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":17293848,\"firstname\":\"Unai\",\"lastname\":\"Miguel Ba\\u00f1uelos\",\"email\":\"urias.juan@example.org\",\"phone\":\"916 055873\",\"birthdate\":\"2002-08-10\",\"gender\":\"male\",\"address\":\"Calle Francisco, 7, 1\\u00ba B\",\"store_id\":\"HX-VPE-00\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":76700653,\"firstname\":\"Jorge\",\"lastname\":\"Lucero Vel\\u00e1zquez\",\"email\":\"klucio@example.net\",\"phone\":\"+34 956-265305\",\"birthdate\":\"1995-07-09\",\"gender\":\"male\",\"address\":\"Calle Pol, 653, 52\\u00ba B\",\"store_id\":\"EY-DUS-40\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":19744087,\"firstname\":\"Jes\\u00fas\",\"lastname\":\"Grijalva Espinosa\",\"email\":\"biel.reyna@example.org\",\"phone\":\"+34 936-974541\",\"birthdate\":\"1977-06-16\",\"gender\":\"male\",\"address\":\"Camino Polo, 230, Entre suelo 2\\u00ba\",\"store_id\":\"HH-HLN-72\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":80983319,\"firstname\":\"Francisca\",\"lastname\":\"Rom\\u00e1n Brito\",\"email\":\"ulibarri.ines@example.org\",\"phone\":\"979-53-6424\",\"birthdate\":\"2002-06-06\",\"gender\":\"female\",\"address\":\"Ronda Mireles, 743, 1\\u00ba E\",\"store_id\":\"KA-NQX-25\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":84505283,\"firstname\":\"Marina\",\"lastname\":\"Zambrano Riera\",\"email\":\"dcaro@example.net\",\"phone\":\"914 055174\",\"birthdate\":\"1976-08-01\",\"gender\":\"female\",\"address\":\"Paseo Sevilla, 883, 89\\u00ba 0\\u00ba\",\"store_id\":\"QO-TML-21\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":96788376,\"firstname\":\"Gloria\",\"lastname\":\"Esteve Pichardo\",\"email\":\"silvia.archuleta@example.com\",\"phone\":\"925-005792\",\"birthdate\":\"1975-01-06\",\"gender\":\"female\",\"address\":\"Ruela Adam, 2, 4\\u00ba C\",\"store_id\":\"QO-TML-21\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":31366416,\"firstname\":\"Pol\",\"lastname\":\"Nava Crespo\",\"email\":\"diego61@example.org\",\"phone\":\"+34 980 702926\",\"birthdate\":\"1970-02-07\",\"gender\":\"male\",\"address\":\"Ronda Iv\\u00e1n, 82, 44\\u00ba 5\\u00ba\",\"store_id\":\"QP-UDW-13\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":15600581,\"firstname\":\"Helena\",\"lastname\":\"Benav\\u00eddez Lim\\u00f3n\",\"email\":\"guardado.josefa@example.com\",\"phone\":\"919-687748\",\"birthdate\":\"1973-12-07\",\"gender\":\"female\",\"address\":\"Ronda Collado, 6, 12\\u00ba 1\\u00ba\",\"store_id\":\"GJ-EJG-02\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":56221147,\"firstname\":\"Ana\",\"lastname\":\"Varela Barrios\",\"email\":\"dbarela@example.org\",\"phone\":\"+34 997-10-9568\",\"birthdate\":\"1986-07-20\",\"gender\":\"female\",\"address\":\"Traves\\u00eda Vila, 173, 53\\u00ba F\",\"store_id\":\"RD-EEJ-78\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":268418,\"firstname\":\"Carolina\",\"lastname\":\"T\\u00f3rrez Oliv\\u00e1rez\",\"email\":\"qviera@example.net\",\"phone\":\"965-40-8442\",\"birthdate\":\"1996-06-22\",\"gender\":\"female\",\"address\":\"Traves\\u00eda Luis, 2, Bajo 9\\u00ba\",\"store_id\":\"DR-UXZ-66\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":60501616,\"firstname\":\"Luis\",\"lastname\":\"Segovia Tejada\",\"email\":\"adrian.pastor@example.com\",\"phone\":\"+34 985-967580\",\"birthdate\":\"1996-04-01\",\"gender\":\"male\",\"address\":\"Pla\\u00e7a Cas\\u00e1rez, 64, Bajo 2\\u00ba\",\"store_id\":\"BP-MLO-23\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":86343111,\"firstname\":\"Jos\\u00e9 Antonio\",\"lastname\":\"Barrag\\u00e1n V\\u00e1zquez\",\"email\":\"samuel.montes@example.org\",\"phone\":\"+34 966340870\",\"birthdate\":\"1997-06-24\",\"gender\":\"male\",\"address\":\"R\\u00faa Asier, 585, 6\\u00ba E\",\"store_id\":\"JY-PNA-00\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":30974860,\"firstname\":\"Mario\",\"lastname\":\"Mercado Zamudio\",\"email\":\"guzman.biel@example.net\",\"phone\":\"+34 976 173300\",\"birthdate\":\"1989-06-30\",\"gender\":\"male\",\"address\":\"Praza Vera, 739, 17\\u00ba C\",\"store_id\":\"LQ-FBZ-72\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":11605067,\"firstname\":\"Samuel\",\"lastname\":\"Maestas Alarc\\u00f3n\",\"email\":\"lllamas@example.com\",\"phone\":\"+34 963864772\",\"birthdate\":\"1997-12-19\",\"gender\":\"male\",\"address\":\"Ruela Dario, 825, Entre suelo 7\\u00ba\",\"store_id\":\"RG-UFJ-87\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":23681915,\"firstname\":\"Gonzalo\",\"lastname\":\"Figueroa Reyes\",\"email\":\"victor.sepulveda@example.org\",\"phone\":\"+34 914 941369\",\"birthdate\":\"1995-03-20\",\"gender\":\"male\",\"address\":\"Ronda Cristian, 393, 84\\u00ba E\",\"store_id\":\"SV-PZN-88\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":15511492,\"firstname\":\"Andrea\",\"lastname\":\"Rico Serrano\",\"email\":\"alejandro.garcia@example.net\",\"phone\":\"+34 990 998720\",\"birthdate\":\"1980-03-02\",\"gender\":\"female\",\"address\":\"Avinguda Montes, 99, 4\\u00ba 4\\u00ba\",\"store_id\":\"OC-YHM-78\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":76312059,\"firstname\":\"Paola\",\"lastname\":\"Trujillo Conde\",\"email\":\"henriquez.luisa@example.net\",\"phone\":\"+34 926327666\",\"birthdate\":\"2003-02-02\",\"gender\":\"female\",\"address\":\"Travessera Gait\\u00e1n, 92, Entre suelo 8\\u00ba\",\"store_id\":\"VK-YII-90\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":96900664,\"firstname\":\"Nicol\\u00e1s\",\"lastname\":\"Cazares Mesa\",\"email\":\"chacon.mario@example.com\",\"phone\":\"907-212166\",\"birthdate\":\"1989-12-22\",\"gender\":\"male\",\"address\":\"Carrer Nava, 838, 4\\u00ba D\",\"store_id\":\"ZX-YET-82\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":77661259,\"firstname\":\"Daniel\",\"lastname\":\"Luevano Arce\",\"email\":\"oscar89@example.com\",\"phone\":\"+34 991-95-6897\",\"birthdate\":\"1974-09-27\",\"gender\":\"male\",\"address\":\"Traves\\u00eda Avil\\u00e9s, 7, 24\\u00ba 0\\u00ba\",\"store_id\":\"YA-OEA-52\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":43461890,\"firstname\":\"Mar\",\"lastname\":\"Barreto Alonso\",\"email\":\"jose99@example.com\",\"phone\":\"+34 929 020342\",\"birthdate\":\"1993-07-23\",\"gender\":\"female\",\"address\":\"Traves\\u00eda Encarnaci\\u00f3n, 165, 6\\u00ba B\",\"store_id\":\"KS-JLA-66\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":98297529,\"firstname\":\"Jon\",\"lastname\":\"Cuenca Cerv\\u00e1ntez\",\"email\":\"ccordova@example.com\",\"phone\":\"916269769\",\"birthdate\":\"1985-11-01\",\"gender\":\"male\",\"address\":\"Carrer Mar\\u00eda Dolores, 1, \\u00c1tico 4\\u00ba\",\"store_id\":\"JY-TVK-41\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":91239945,\"firstname\":\"Ainhoa\",\"lastname\":\"Barela Delagarza\",\"email\":\"lorena.camacho@example.com\",\"phone\":\"+34 987717902\",\"birthdate\":\"1989-11-08\",\"gender\":\"female\",\"address\":\"Plaza Rosas, 320, 13\\u00ba C\",\"store_id\":\"TJ-BDK-82\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":68757262,\"firstname\":\"Nadia\",\"lastname\":\"Casanova Casta\\u00f1eda\",\"email\":\"mora.franciscojavier@example.net\",\"phone\":\"992-05-0449\",\"birthdate\":\"1982-08-23\",\"gender\":\"female\",\"address\":\"Traves\\u00eda Orta, 23, Bajos\",\"store_id\":\"GV-JQC-23\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":49544746,\"firstname\":\"Aaron\",\"lastname\":\"Alonzo Varela\",\"email\":\"villar.samuel@example.org\",\"phone\":\"921864673\",\"birthdate\":\"1996-06-23\",\"gender\":\"male\",\"address\":\"Avinguda Sof\\u00eda, 2, 60\\u00ba E\",\"store_id\":\"GC-HNJ-66\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":91880014,\"firstname\":\"Samuel\",\"lastname\":\"Ceja Ferrer\",\"email\":\"roberto25@example.net\",\"phone\":\"937-62-3528\",\"birthdate\":\"1982-04-01\",\"gender\":\"male\",\"address\":\"Ruela Pereira, 7, 6\\u00ba 7\\u00ba\",\"store_id\":\"QN-EPK-67\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":4154490,\"firstname\":\"Mar\\u00eda \\u00c1ngeles\",\"lastname\":\"Luis Bravo\",\"email\":\"briones.iker@example.com\",\"phone\":\"+34 947 34 4602\",\"birthdate\":\"2007-11-29\",\"gender\":\"female\",\"address\":\"Avinguda Salas, 7, 8\\u00ba 5\\u00ba\",\"store_id\":\"LX-UMS-54\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":40909764,\"firstname\":\"Ignacio\",\"lastname\":\"Delatorre \\u00c1valos\",\"email\":\"olivarez.gabriela@example.com\",\"phone\":\"+34 904 37 0628\",\"birthdate\":\"2006-11-08\",\"gender\":\"male\",\"address\":\"Travessera Lidia, 303, 2\\u00ba D\",\"store_id\":\"KM-NQD-15\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":55445310,\"firstname\":\"Victoria\",\"lastname\":\"Sanabria Rojas\",\"email\":\"jaimes.aleix@example.com\",\"phone\":\"925-46-3817\",\"birthdate\":\"2003-12-04\",\"gender\":\"female\",\"address\":\"Ronda Jos\\u00e9, 9, 3\\u00ba A\",\"store_id\":\"YS-OGO-47\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":49525351,\"firstname\":\"Aitor\",\"lastname\":\"Zaragoza Escamilla\",\"email\":\"olivo.elena@example.com\",\"phone\":\"933-191399\",\"birthdate\":\"1988-02-27\",\"gender\":\"male\",\"address\":\"Praza Fonseca, 5, 0\\u00ba A\",\"store_id\":\"FQ-EWI-83\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":45313696,\"firstname\":\"Lidia\",\"lastname\":\"Mondrag\\u00f3n Vel\\u00e1squez\",\"email\":\"oriol.lopez@example.net\",\"phone\":\"+34 984-461482\",\"birthdate\":\"1994-12-16\",\"gender\":\"female\",\"address\":\"Calle David, 517, 63\\u00ba B\",\"store_id\":\"QO-TML-21\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":50781124,\"firstname\":\"Fernando\",\"lastname\":\"Padilla Carrasco\",\"email\":\"biel.rey@example.org\",\"phone\":\"+34 977-86-6047\",\"birthdate\":\"1980-02-02\",\"gender\":\"male\",\"address\":\"Ruela Cristian, 8, Bajo 4\\u00ba\",\"store_id\":\"OF-LCX-78\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"},{\"dni\":41944236,\"firstname\":\"Candela\",\"lastname\":\"Plaza Briones\",\"email\":\"veronica.pedroza@example.com\",\"phone\":\"974 19 0433\",\"birthdate\":\"1978-11-01\",\"gender\":\"female\",\"address\":\"Paseo Guillem, 63, Bajo 3\\u00ba\",\"store_id\":\"GV-JQC-23\",\"role\":\"sales_staff\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"}]"
+                      }
+                    },
+                    "description": null
+                  },
+                  {
+                    "v": "17",
+                    "name": "show staff",
+                    "method": "GET",
+                    "endpoint": "http://127.0.0.1:8000/api/panel/manage/staff/94496703",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "bearer",
+                      "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {
+                      "show staff": {
+                        "name": "show staff",
+                        "originalRequest": {
+                          "v": "6",
+                          "name": "show staff",
+                          "method": "GET",
+                          "endpoint": "http://127.0.0.1:8000/api/panel/manage/staff/94496703",
+                          "headers": [],
+                          "params": [],
+                          "body": {
+                            "contentType": null,
+                            "body": null
+                          },
+                          "auth": {
+                            "authType": "bearer",
+                            "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                            "authActive": true
+                          },
+                          "requestVariables": []
+                        },
+                        "status": "200 OK",
+                        "code": 200,
+                        "headers": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Host",
+                            "value": "127.0.0.1:8000"
+                          },
+                          {
+                            "key": "Date",
+                            "value": "Mon, 13 Apr 2026 17:08:37 GMT"
+                          },
+                          {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                          },
+                          {
+                            "key": "X-Powered-By",
+                            "value": "PHP/8.5.4"
+                          },
+                          {
+                            "key": "Connection",
+                            "value": "close"
+                          },
+                          {
+                            "key": "Cache-Control",
+                            "value": "no-cache, private"
+                          }
+                        ],
+                        "body": "{\"dni\":94496703,\"firstname\":\"Encarnaci\\u00f3n\",\"lastname\":\"Correa Tello\",\"email\":\"raquel06@example.org\",\"phone\":\"914 39 4990\",\"birthdate\":\"1971-05-16\",\"gender\":\"female\",\"address\":\"Avenida Sonia, 7, 0\\u00ba B\",\"store_id\":\"QM-LPR-35\",\"role\":\"manager\",\"email_verified_at\":null,\"created_at\":\"2026-04-13T15:46:07.000000Z\",\"updated_at\":\"2026-04-13T15:46:07.000000Z\"}"
+                      }
+                    },
+                    "description": null
+                  },
+                  {
+                    "v": "17",
+                    "name": "new staff",
+                    "method": "POST",
+                    "endpoint": "http://127.0.0.1:8000/api/panel/manage/staff",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "bearer",
+                      "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": "application/json",
+                      "body": "{\n  \"dni\": 11223122,\n  \"firstname\": \"qqqqqq\",\n  \"lastname\": \"qqqqqqqq\",\n  \"email\": \"qqqqqqq6@example.org\",\n  \"phone\": \"914 39 4990\",\n  \"birthdate\": \"1971-05-16\",\n  \"gender\": \"female\",\n  \"address\": \"Avenida Sonia, 7, 0º B\",\n  \"store_id\": \"QM-LPR-35\",\n  \"role\": \"manager\",\n  \"password\": \"123\" \n}"
+                    },
+                    "requestVariables": [],
+                    "responses": {
+                      "new staff": {
+                        "name": "new staff",
+                        "originalRequest": {
+                          "v": "6",
+                          "name": "new staff",
+                          "method": "POST",
+                          "endpoint": "http://127.0.0.1:8000/api/panel/manage/staff",
+                          "headers": [],
+                          "params": [],
+                          "body": {
+                            "contentType": "application/json",
+                            "body": "{\n  \"dni\": 11223122,\n  \"firstname\": \"qqqqqq\",\n  \"lastname\": \"qqqqqqqq\",\n  \"email\": \"qqqqqqq6@example.org\",\n  \"phone\": \"914 39 4990\",\n  \"birthdate\": \"1971-05-16\",\n  \"gender\": \"female\",\n  \"address\": \"Avenida Sonia, 7, 0º B\",\n  \"store_id\": \"QM-LPR-35\",\n  \"role\": \"manager\",\n  \"password\": \"123\" \n}"
+                          },
+                          "auth": {
+                            "authType": "bearer",
+                            "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                            "authActive": true
+                          },
+                          "requestVariables": []
+                        },
+                        "status": "201 Created",
+                        "code": 201,
+                        "headers": [
+                          {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                          },
+                          {
+                            "key": "Host",
+                            "value": "127.0.0.1:8000"
+                          },
+                          {
+                            "key": "Connection",
+                            "value": "close"
+                          },
+                          {
+                            "key": "X-Powered-By",
+                            "value": "PHP/8.5.4"
+                          },
+                          {
+                            "key": "Date",
+                            "value": "Mon, 13 Apr 2026 17:16:49 GMT"
+                          },
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Cache-Control",
+                            "value": "no-cache, private"
+                          }
+                        ],
+                        "body": "{\"dni\":11223122,\"firstname\":\"qqqqqq\",\"lastname\":\"qqqqqqqq\",\"email\":\"qqqqqqq6@example.org\",\"phone\":\"914 39 4990\",\"birthdate\":\"1971-05-16\",\"gender\":\"female\",\"address\":\"Avenida Sonia, 7, 0\\u00ba B\",\"store_id\":\"QM-LPR-35\",\"role\":\"manager\",\"updated_at\":\"2026-04-13T17:16:49.000000Z\",\"created_at\":\"2026-04-13T17:16:49.000000Z\"}"
+                      }
+                    },
+                    "description": "{\n  \"dni\": 11223122,\n  \"firstname\": \"qqqqqq\",\n  \"lastname\": \"qqqqqqqq\",\n  \"email\": \"qqqqqqq6@example.org\",\n  \"phone\": \"914 39 4990\",\n  \"birthdate\": \"1971-05-16\",\n  \"gender\": \"female\",\n  \"address\": \"Avenida Sonia, 7, 0º B\",\n  \"store_id\": \"QM-LPR-35\",\n  \"role\": \"manager\",\n  \"password\": \"123\" \n}"
+                  },
+                  {
+                    "v": "17",
+                    "name": "delete staff",
+                    "method": "DELETE",
+                    "endpoint": "http://127.0.0.1:8000/api/panel/manage/staff/50781124",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "bearer",
+                      "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {
+                      "delete staff": {
+                        "name": "delete staff",
+                        "originalRequest": {
+                          "v": "6",
+                          "name": "delete staff",
+                          "method": "DELETE",
+                          "endpoint": "http://127.0.0.1:8000/api/panel/manage/staff/50781124",
+                          "headers": [],
+                          "params": [],
+                          "body": {
+                            "contentType": null,
+                            "body": null
+                          },
+                          "auth": {
+                            "authType": "bearer",
+                            "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                            "authActive": true
+                          },
+                          "requestVariables": []
+                        },
+                        "status": "200 OK",
+                        "code": 200,
+                        "headers": [
+                          {
+                            "key": "Cache-Control",
+                            "value": "no-cache, private"
+                          },
+                          {
+                            "key": "Host",
+                            "value": "127.0.0.1:8000"
+                          },
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                          },
+                          {
+                            "key": "Date",
+                            "value": "Mon, 13 Apr 2026 17:20:55 GMT"
+                          },
+                          {
+                            "key": "Connection",
+                            "value": "close"
+                          },
+                          {
+                            "key": "X-Powered-By",
+                            "value": "PHP/8.5.4"
+                          }
+                        ],
+                        "body": "{\"message\":\"staff eliminado exitosamente\"}"
+                      }
+                    },
+                    "description": null
+                  }
+                ],
+                "auth": {
+                  "authType": "inherit",
+                  "authActive": true
+                },
+                "headers": [],
+                "variables": [],
+                "description": null
+              },
+              {
+                "v": 11,
+                "name": "stores",
+                "folders": [],
+                "requests": [
+                  {
+                    "v": "17",
+                    "name": "all stores",
+                    "method": "GET",
+                    "endpoint": "http://127.0.0.1:8000/api/panel/manage/store",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "bearer",
+                      "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {
+                      "all stores": {
+                        "name": "all stores",
+                        "originalRequest": {
+                          "v": "6",
+                          "name": "all stores",
+                          "method": "GET",
+                          "endpoint": "http://127.0.0.1:8000/api/panel/manage/store",
+                          "headers": [],
+                          "params": [],
+                          "body": {
+                            "contentType": null,
+                            "body": null
+                          },
+                          "auth": {
+                            "authType": "bearer",
+                            "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                            "authActive": true
+                          },
+                          "requestVariables": []
+                        },
+                        "status": "200 OK",
+                        "code": 200,
+                        "headers": [
+                          {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                          },
+                          {
+                            "key": "Host",
+                            "value": "127.0.0.1:8000"
+                          },
+                          {
+                            "key": "X-Powered-By",
+                            "value": "PHP/8.5.4"
+                          },
+                          {
+                            "key": "Date",
+                            "value": "Mon, 13 Apr 2026 17:22:59 GMT"
+                          },
+                          {
+                            "key": "Connection",
+                            "value": "close"
+                          },
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Cache-Control",
+                            "value": "no-cache, private"
+                          }
+                        ],
+                        "body": "[{\"id\":\"AA-AAA-00\",\"store_name\":\"Default Store\",\"address\":null,\"city\":null,\"state\":null},{\"id\":\"QO-TML-21\",\"store_name\":\"la oveja Negra #70\",\"address\":\"Pla\\u00e7a Mar\\u00eda Pilar, 284, 4\\u00ba\",\"city\":\"El Lomeli del Mirador\",\"state\":\"Soria\"},{\"id\":\"CQ-XNU-38\",\"store_name\":\"Napoli San Serrano del Puerto\",\"address\":\"Traves\\u00eda Roc\\u00edo, 159, 21\\u00ba A\",\"city\":\"As Borrego del Puerto\",\"state\":\"Ceuta\"},{\"id\":\"WD-ZJY-65\",\"store_name\":\"Pizza King Italiana\",\"address\":\"Ruela Ignacio, 6, 72\\u00ba C\",\"city\":\"Villa Prado del Pened\\u00e8s\",\"state\":\"La Rioja\"},{\"id\":\"TG-CFI-90\",\"store_name\":\"La Quiero Pizza San Rojas del Vall\\u00e8s\",\"address\":\"Traves\\u00eda Irene, 5, 62\\u00ba 2\\u00ba\",\"city\":\"A Fuentes\",\"state\":\"Sevilla\"},{\"id\":\"OH-FTJ-05\",\"store_name\":\"Pizza House La Puig\",\"address\":\"Passeig Unai, 95, 9\\u00ba F\",\"city\":\"L' Ch\\u00e1vez\",\"state\":\"Huelva\"},{\"id\":\"JY-PNA-00\",\"store_name\":\"Quiero Pizza & Pasta\",\"address\":\"Traves\\u00eda Jaime, 8, 38\\u00ba D\",\"city\":\"L' Solano\",\"state\":\"Soria\"},{\"id\":\"TG-ZYC-86\",\"store_name\":\"Pizza House Fresh\",\"address\":\"Travessera Delagarza, 44, 11\\u00ba F\",\"city\":\"A Maya de las Torres\",\"state\":\"Murcia\"},{\"id\":\"XP-CVP-39\",\"store_name\":\"la oveja Negra\",\"address\":\"Plaza Lara, 54, 11\\u00ba F\",\"city\":\"Carrasco del Barco\",\"state\":\"Alicante\"},{\"id\":\"GR-KGT-55\",\"store_name\":\"Pizza Total & Pasta\",\"address\":\"R\\u00faa Ra\\u00fal, 508, 10\\u00ba B\",\"city\":\"O Zapata de la Sierra\",\"state\":\"Cuenca\"},{\"id\":\"GF-MSW-98\",\"store_name\":\"Original Pizza Armas\",\"address\":\"Travessera Nerea, 83, 7\\u00ba E\",\"city\":\"Villa Partida del Bages\",\"state\":\"Castell\\u00f3n\"},{\"id\":\"JG-PWY-72\",\"store_name\":\"la oveja Negra Gast\\u00e9lum\",\"address\":\"Travessera Garrido, 8, Entre suelo 8\\u00ba\",\"city\":\"Cuesta de Ulla\",\"state\":\"Huelva\"},{\"id\":\"YA-OEA-52\",\"store_name\":\"Pizza del Barrio Italiana\",\"address\":\"Travessera Ona, 600, 0\\u00ba C\",\"city\":\"Barajas Alta\",\"state\":\"Pontevedra\"},{\"id\":\"FA-KYT-49\",\"store_name\":\"Pizza de la Esquina Gourmet\",\"address\":\"Ruela Luc\\u00eda, 4, 7\\u00ba C\",\"city\":\"Barrientos de la Sierra\",\"state\":\"\\u00c1vila\"},{\"id\":\"IA-IAA-72\",\"store_name\":\"Roma Pizza\",\"address\":\"Praza Nadia, 4, 4\\u00ba\",\"city\":\"Las Sauceda del Puerto\",\"state\":\"Murcia\"},{\"id\":\"ZD-XBD-65\",\"store_name\":\"Donatello\",\"address\":\"Carrer Segovia, 478, 86\\u00ba C\",\"city\":\"A Angulo\",\"state\":\"Granada\"},{\"id\":\"XQ-QMD-76\",\"store_name\":\"Pizza N\\u00fa\\u00f1ez\",\"address\":\"Calle Portillo, 320, 9\\u00ba D\",\"city\":\"Guerra del Pozo\",\"state\":\"Sevilla\"},{\"id\":\"PY-RAW-18\",\"store_name\":\"La Pizza King O Espino de Lemos\",\"address\":\"Cami\\u00f1o Montoya, 18, 0\\u00ba C\",\"city\":\"Villa Delao del Pozo\",\"state\":\"Granada\"},{\"id\":\"ML-WGY-53\",\"store_name\":\"Roma Pizza Preciado\",\"address\":\"Passeig Alva, 445, \\u00c1tico 6\\u00ba\",\"city\":\"Os Mojica\",\"state\":\"Valladolid\"},{\"id\":\"HL-UHC-56\",\"store_name\":\"Pizzer\\u00eda\",\"address\":\"Ronda Jos\\u00e9 Manuel, 571, 7\\u00ba A\",\"city\":\"Los Abad\",\"state\":\"Badajoz\"},{\"id\":\"NO-CPO-51\",\"store_name\":\"Bella Pizza Vall Enr\\u00edquez\",\"address\":\"Praza Rubio, 59, 9\\u00ba A\",\"city\":\"Robledo de la Sierra\",\"state\":\"Granada\"},{\"id\":\"YS-OGO-47\",\"store_name\":\"La Pizzer\\u00eda\",\"address\":\"Avenida Pedro, 71, 75\\u00ba C\",\"city\":\"Guerrero del Barco\",\"state\":\"Salamanca\"},{\"id\":\"CI-EHV-81\",\"store_name\":\"La Pizza Express & Grill\",\"address\":\"Cami\\u00f1o Sara, 1, 3\\u00ba\",\"city\":\"El Alicea de Arriba\",\"state\":\"Asturias\"},{\"id\":\"VK-YII-90\",\"store_name\":\"Original Pizza & Grill\",\"address\":\"Cami\\u00f1o Alba, 8, 3\\u00ba A\",\"city\":\"Polanco de Arriba\",\"state\":\"A Coru\\u00f1a\"},{\"id\":\"IC-PKP-20\",\"store_name\":\"Pizzer\\u00eda Rold\\u00e1n\",\"address\":\"Camino Polo, 23, 46\\u00ba C\",\"city\":\"L' Valero\",\"state\":\"Barcelona\"},{\"id\":\"AY-SYQ-55\",\"store_name\":\"La Pizza Montes de Ulla\",\"address\":\"Avenida Carrero, 55, 7\\u00ba A\",\"city\":\"O Roybal\",\"state\":\"Cuenca\"},{\"id\":\"JE-HJW-82\",\"store_name\":\"Pizza Total Fresh\",\"address\":\"Paseo Camacho, 878, 0\\u00ba D\",\"city\":\"Ulloa Baja\",\"state\":\"Girona\"},{\"id\":\"LE-MXF-47\",\"store_name\":\"Pizza Master Premium\",\"address\":\"Plaza T\\u00e9llez, 22, 35\\u00ba F\",\"city\":\"L' Soto Medio\",\"state\":\"C\\u00e1ceres\"},{\"id\":\"VP-OYY-45\",\"store_name\":\"Pizza del Barrio Rasc\\u00f3n\",\"address\":\"Avinguda Lorena, 641, 36\\u00ba D\",\"city\":\"A Valenzuela de la Sierra\",\"state\":\"Ciudad Real\"},{\"id\":\"XL-GIP-70\",\"store_name\":\"Pizza de la Esquina Italiana\",\"address\":\"Ronda Feliciano, 54, 24\\u00ba D\",\"city\":\"Villa Ure\\u00f1a\",\"state\":\"Lugo\"},{\"id\":\"UL-OUP-32\",\"store_name\":\"Pizza Total Zavala Alta\",\"address\":\"Traves\\u00eda Olivo, 94, 52\\u00ba B\",\"city\":\"Os Jim\\u00ednez del Bages\",\"state\":\"Soria\"},{\"id\":\"JY-TVK-41\",\"store_name\":\"Pizza House Express\",\"address\":\"Avinguda \\u00c1ngela, 244, 1\\u00ba A\",\"city\":\"Puga de Lemos\",\"state\":\"M\\u00e1laga\"},{\"id\":\"LT-YON-44\",\"store_name\":\"Napoli Italiana\",\"address\":\"Avenida Rafael, 8, Bajos\",\"city\":\"Los Rosa\",\"state\":\"C\\u00e1ceres\"},{\"id\":\"MU-YUH-40\",\"store_name\":\"La Pizza Express Acosta\",\"address\":\"Avinguda Pulido, 4, 5\\u00ba B\",\"city\":\"As Barraza\",\"state\":\"Ciudad Real\"},{\"id\":\"DM-FYY-27\",\"store_name\":\"Pizza House\",\"address\":\"Praza Ayala, 6, 9\\u00ba F\",\"city\":\"El Villegas\",\"state\":\"Salamanca\"},{\"id\":\"ZC-MQD-64\",\"store_name\":\"pizza al Paso Gourmet\",\"address\":\"Ruela Nadia, 5, 7\\u00ba F\",\"city\":\"Calvo de la Sierra\",\"state\":\"Melilla\"},{\"id\":\"QS-FJR-93\",\"store_name\":\"la oveja Negra & Grill\",\"address\":\"Cami\\u00f1o Gracia, 2, 9\\u00ba C\",\"city\":\"Mart\\u00ed Baja\",\"state\":\"M\\u00e1laga\"},{\"id\":\"MR-OBB-13\",\"store_name\":\"Pizza House Las Olmos\",\"address\":\"Traves\\u00eda Roig, 425, Bajo 2\\u00ba\",\"city\":\"El Raya del Bages\",\"state\":\"Cuenca\"},{\"id\":\"BU-UKX-06\",\"store_name\":\"Pizza del Barrio Express\",\"address\":\"Paseo Marina, 873, 51\\u00ba A\",\"city\":\"Calder\\u00f3n del Bages\",\"state\":\"Toledo\"},{\"id\":\"OQ-EGE-74\",\"store_name\":\"Pizza King Express\",\"address\":\"Pla\\u00e7a Leire, 3, 10\\u00ba B\",\"city\":\"G\\u00e1mez de la Sierra\",\"state\":\"Ourense\"},{\"id\":\"WL-SHZ-94\",\"store_name\":\"Bella Pizza Gourmet\",\"address\":\"Ronda Adam, 102, 5\\u00ba E\",\"city\":\"El Santana del Mirador\",\"state\":\"Barcelona\"},{\"id\":\"KB-LZH-40\",\"store_name\":\"pizza al Paso & Grill\",\"address\":\"Ronda Elizondo, 297, 78\\u00ba 5\\u00ba\",\"city\":\"San Alc\\u00e1ntar\",\"state\":\"Segovia\"},{\"id\":\"QV-GMD-09\",\"store_name\":\"La Pizza de la Esquina #38\",\"address\":\"Traves\\u00eda Pedro, 9, 0\\u00ba\",\"city\":\"L' Amador\",\"state\":\"Ja\\u00e9n\"},{\"id\":\"LQ-FBZ-72\",\"store_name\":\"la oveja Negra & Pasta\",\"address\":\"Paseo Dario, 222, 3\\u00ba D\",\"city\":\"Villa Vaca de la Sierra\",\"state\":\"Sevilla\"},{\"id\":\"VU-EEI-79\",\"store_name\":\"La Pizza del Barrio Premium\",\"address\":\"R\\u00faa Pedroza, 459, Bajo 3\\u00ba\",\"city\":\"A Godoy de San Pedro\",\"state\":\"Illes Balears\"},{\"id\":\"MQ-JRK-07\",\"store_name\":\"Pizza King Nava\",\"address\":\"R\\u00faa Ben\\u00edtez, 995, 9\\u00ba F\",\"city\":\"A Santana\",\"state\":\"Lleida\"},{\"id\":\"IL-DBZ-34\",\"store_name\":\"La Pizza y Algo M\\u00e1s Gourmet\",\"address\":\"Cami\\u00f1o Jon, 788, 0\\u00ba E\",\"city\":\"Os Meraz\",\"state\":\"C\\u00e1ceres\"},{\"id\":\"XZ-DOH-81\",\"store_name\":\"La Pizza del Barrio & Pasta\",\"address\":\"Paseo \\u00d3scar, 56, 3\\u00ba F\",\"city\":\"L' Gallego\",\"state\":\"M\\u00e1laga\"},{\"id\":\"YC-LMP-01\",\"store_name\":\"Pizza House Italiana\",\"address\":\"Passeig Mu\\u00f1oz, 924, 60\\u00ba B\",\"city\":\"La Blasco\",\"state\":\"Ja\\u00e9n\"},{\"id\":\"LT-CRW-93\",\"store_name\":\"Super Queso 24h\",\"address\":\"Pla\\u00e7a Amaya, 3, 35\\u00ba D\",\"city\":\"Monta\\u00f1o de Lemos\",\"state\":\"Teruel\"},{\"id\":\"CB-IXS-54\",\"store_name\":\"Bella Pizza Lira\",\"address\":\"Carrer Amador, 21, 8\\u00ba\",\"city\":\"Vall Rasc\\u00f3n\",\"state\":\"Segovia\"},{\"id\":\"ZN-WFM-33\",\"store_name\":\"Donatello Riojas\",\"address\":\"Ronda Daniel, 68, Bajo 9\\u00ba\",\"city\":\"Los Luj\\u00e1n\",\"state\":\"Palencia\"},{\"id\":\"EW-TYP-46\",\"store_name\":\"pizza al Paso S\\u00e1enz\",\"address\":\"Avinguda Armenta, 41, 6\\u00ba C\",\"city\":\"Los Marroqu\\u00edn de San Pedro\",\"state\":\"Navarra\"},{\"id\":\"RN-GDY-27\",\"store_name\":\"La Pizza #43\",\"address\":\"Avinguda Olivera, 410, 98\\u00ba 1\\u00ba\",\"city\":\"Calero del Vall\\u00e8s\",\"state\":\"Navarra\"},{\"id\":\"NN-SVL-16\",\"store_name\":\"Original Pizza Los Fr\\u00edas del Bages\",\"address\":\"Ruela Ana, 543, 6\\u00ba\",\"city\":\"Arce de San Pedro\",\"state\":\"Granada\"},{\"id\":\"KS-GRS-31\",\"store_name\":\"la oveja Negra Vaca\",\"address\":\"R\\u00faa Rafael, 886, 49\\u00ba B\",\"city\":\"Nava del Vall\\u00e8s\",\"state\":\"Guipuzkoa\"},{\"id\":\"PB-IZU-94\",\"store_name\":\"Donatello #23\",\"address\":\"Avinguda Luj\\u00e1n, 454, 67\\u00ba F\",\"city\":\"Vall Nava Alta\",\"state\":\"Tarragona\"},{\"id\":\"FG-LRN-30\",\"store_name\":\"La Pizza y Algo M\\u00e1s & Grill\",\"address\":\"Travessera Mateos, 52, 6\\u00ba A\",\"city\":\"Z\\u00fa\\u00f1iga de Ulla\",\"state\":\"C\\u00e1ceres\"},{\"id\":\"OE-RIL-86\",\"store_name\":\"La Original Pizza Tijerina\",\"address\":\"Pla\\u00e7a Aleix, 874, 39\\u00ba A\",\"city\":\"Las Altamirano\",\"state\":\"Valladolid\"},{\"id\":\"PH-MGY-02\",\"store_name\":\"Quiero Pizza #70\",\"address\":\"Ruela Mart\\u00edn, 48, \\u00c1tico 0\\u00ba\",\"city\":\"Riera del Pened\\u00e8s\",\"state\":\"Asturias\"},{\"id\":\"OS-HCL-75\",\"store_name\":\"Pizza King #97\",\"address\":\"Carrer Saldivar, 216, Entre suelo 3\\u00ba\",\"city\":\"Los Monta\\u00f1ez\",\"state\":\"Sevilla\"},{\"id\":\"QP-UDW-13\",\"store_name\":\"La Pizza Ru\\u00edz\",\"address\":\"R\\u00faa Aitor, 391, 43\\u00ba F\",\"city\":\"Romero Baja\",\"state\":\"M\\u00e1laga\"},{\"id\":\"OC-YHM-78\",\"store_name\":\"Pizza Express Qui\\u00f1\\u00f3nez\",\"address\":\"Avinguda Camarillo, 68, 8\\u00ba C\",\"city\":\"Villa Hern\\u00e1dez del Mirador\",\"state\":\"Ourense\"},{\"id\":\"HX-VPE-00\",\"store_name\":\"Come Pizza #61\",\"address\":\"Passeig Carolina, 5, 30\\u00ba D\",\"city\":\"A Solorio\",\"state\":\"Cuenca\"},{\"id\":\"KS-JLA-66\",\"store_name\":\"Original Pizza El Sim\\u00f3n de Ulla\",\"address\":\"Passeig Urbina, 4, 11\\u00ba F\",\"city\":\"Collado del Pened\\u00e8s\",\"state\":\"Pontevedra\"},{\"id\":\"OS-SIP-41\",\"store_name\":\"Roma Pizza #71\",\"address\":\"Avenida Gabriel, 15, 0\\u00ba B\",\"city\":\"Os Vargas\",\"state\":\"Zamora\"},{\"id\":\"HS-ENF-61\",\"store_name\":\"Pizza World #57\",\"address\":\"Carrer Mora, 8, \\u00c1tico 7\\u00ba\",\"city\":\"Villa Valdivia de San Pedro\",\"state\":\"Le\\u00f3n\"},{\"id\":\"UR-CPR-37\",\"store_name\":\"Roma Pizza #93\",\"address\":\"Pla\\u00e7a Daniela, 5, 78\\u00ba A\",\"city\":\"La Valadez del Mirador\",\"state\":\"Alicante\"},{\"id\":\"BX-BON-76\",\"store_name\":\"La Pizza y Algo M\\u00e1s #91\",\"address\":\"Travessera Alejandro, 730, 50\\u00ba B\",\"city\":\"La Salcido\",\"state\":\"Le\\u00f3n\"},{\"id\":\"RE-HIU-36\",\"store_name\":\"La Come Pizza 24h\",\"address\":\"Travessera Carlos, 20, 7\\u00ba D\",\"city\":\"Vall Esquivel del Barco\",\"state\":\"Illes Balears\"},{\"id\":\"QF-ZWF-67\",\"store_name\":\"Pizza Express\",\"address\":\"Camino Leo, 94, 8\\u00ba D\",\"city\":\"O Izquierdo de las Torres\",\"state\":\"Badajoz\"},{\"id\":\"VL-LXA-82\",\"store_name\":\"La Donatello & Pasta\",\"address\":\"Calle Alonso, 81, 7\\u00ba\",\"city\":\"Lira del Barco\",\"state\":\"Las Palmas\"},{\"id\":\"ZC-XWD-41\",\"store_name\":\"La Pizza Express\",\"address\":\"Ruela Nev\\u00e1rez, 4, 0\\u00ba 2\\u00ba\",\"city\":\"San Quintero del Mirador\",\"state\":\"Le\\u00f3n\"},{\"id\":\"JN-QRH-74\",\"store_name\":\"La Quiero Pizza Italiana\",\"address\":\"Carrer Unai, 48, 20\\u00ba F\",\"city\":\"L' Zambrano\",\"state\":\"Badajoz\"},{\"id\":\"SY-PGK-94\",\"store_name\":\"Quiero Pizza Premium\",\"address\":\"Plaza Joel, 1, 6\\u00ba F\",\"city\":\"San Romero del Vall\\u00e8s\",\"state\":\"Ourense\"},{\"id\":\"QV-RTI-54\",\"store_name\":\"Original Pizza Salda\\u00f1a\",\"address\":\"R\\u00faa Isabel, 94, \\u00c1tico 4\\u00ba\",\"city\":\"El Ontiveros de Arriba\",\"state\":\"Barcelona\"},{\"id\":\"ZR-KQG-32\",\"store_name\":\"Bella Pizza\",\"address\":\"Camino Delao, 111, 1\\u00ba A\",\"city\":\"Villa Naranjo del Pozo\",\"state\":\"Salamanca\"},{\"id\":\"IR-QSO-35\",\"store_name\":\"pizza al Paso #43\",\"address\":\"Avenida Sandra, 123, 14\\u00ba A\",\"city\":\"Vall Zavala de las Torres\",\"state\":\"Palencia\"},{\"id\":\"ZS-JOS-87\",\"store_name\":\"Pizza del Barrio Fresh\",\"address\":\"Cami\\u00f1o Guerra, 706, 98\\u00ba C\",\"city\":\"Mares Alta\",\"state\":\"Sevilla\"},{\"id\":\"BI-GAX-49\",\"store_name\":\"La Pizza Master Bermejo\",\"address\":\"Ronda Cano, 7, 14\\u00ba E\",\"city\":\"Pastor Medio\",\"state\":\"Santa Cruz de Tenerife\"},{\"id\":\"IZ-YLV-96\",\"store_name\":\"La Come Pizza & Grill\",\"address\":\"Praza Dom\\u00ednguez, 78, 85\\u00ba A\",\"city\":\"Los Saucedo\",\"state\":\"Las Palmas\"},{\"id\":\"LX-UMS-54\",\"store_name\":\"Pizza\",\"address\":\"Praza Macias, 6, 2\\u00ba D\",\"city\":\"Naranjo de Arriba\",\"state\":\"Guadalajara\"},{\"id\":\"SV-PZN-88\",\"store_name\":\"Pizza House Zapata del Pozo\",\"address\":\"Camino Alejandra, 987, 42\\u00ba A\",\"city\":\"Abrego del Barco\",\"state\":\"Lugo\"},{\"id\":\"TP-HAQ-17\",\"store_name\":\"Napoli Pedroza del Puerto\",\"address\":\"Pla\\u00e7a Marroqu\\u00edn, 23, 3\\u00ba D\",\"city\":\"A Villegas de Arriba\",\"state\":\"Girona\"},{\"id\":\"MD-OED-53\",\"store_name\":\"Pizza House Gourmet\",\"address\":\"Avenida Est\\u00e9vez, 828, Entre suelo 3\\u00ba\",\"city\":\"Os Sanabria\",\"state\":\"Sevilla\"},{\"id\":\"KS-HZB-95\",\"store_name\":\"Pizza House #40\",\"address\":\"Ruela Noelia, 34, 67\\u00ba A\",\"city\":\"El Montenegro\",\"state\":\"Illes Balears\"},{\"id\":\"EC-GKT-74\",\"store_name\":\"La Bella Pizza\",\"address\":\"R\\u00faa Berta, 5, 8\\u00ba A\",\"city\":\"Las Rosa\",\"state\":\"Madrid\"},{\"id\":\"FQ-EWI-83\",\"store_name\":\"Pizza King Premium\",\"address\":\"Praza Laura, 749, 7\\u00ba A\",\"city\":\"O Rend\\u00f3n Alta\",\"state\":\"Granada\"},{\"id\":\"TT-UVN-84\",\"store_name\":\"Pizza\",\"address\":\"Traves\\u00eda Nuria, 7, Entre suelo 5\\u00ba\",\"city\":\"Izquierdo de las Torres\",\"state\":\"Albacete\"},{\"id\":\"AJ-PWS-39\",\"store_name\":\"Pizza World\",\"address\":\"Avinguda Oliva, 514, 58\\u00ba E\",\"city\":\"Las Galv\\u00e1n de las Torres\",\"state\":\"Almer\\u00eda\"},{\"id\":\"JI-BBV-19\",\"store_name\":\"La Pizza House O Tovar del Bages\",\"address\":\"Avinguda Hern\\u00e1ndez, 59, 0\\u00ba 5\\u00ba\",\"city\":\"Villa Rodr\\u00edguez del Barco\",\"state\":\"Albacete\"},{\"id\":\"LW-HBF-53\",\"store_name\":\"Pizza & Grill\",\"address\":\"R\\u00faa Enr\\u00edquez, 11, 52\\u00ba 6\\u00ba\",\"city\":\"Las Luj\\u00e1n\",\"state\":\"A Coru\\u00f1a\"},{\"id\":\"BC-CZG-41\",\"store_name\":\"La Come Pizza\",\"address\":\"Pla\\u00e7a Rico, 5, 8\\u00ba E\",\"city\":\"As Trevi\\u00f1o\",\"state\":\"Huesca\"},{\"id\":\"RG-UFJ-87\",\"store_name\":\"Original Pizza\",\"address\":\"Praza Juan, 58, 30\\u00ba C\",\"city\":\"Villa Rocha Alta\",\"state\":\"Huesca\"},{\"id\":\"MO-KVK-93\",\"store_name\":\"Pizza Master\",\"address\":\"Plaza Garica, 613, 0\\u00ba E\",\"city\":\"A Ojeda Baja\",\"state\":\"Madrid\"},{\"id\":\"DL-BLK-63\",\"store_name\":\"La Pizza Master #11\",\"address\":\"Avenida Vald\\u00e9s, 98, 1\\u00ba C\",\"city\":\"La Herrero del Barco\",\"state\":\"C\\u00e1diz\"},{\"id\":\"TE-IRO-19\",\"store_name\":\"Pizza House La Montemayor de Ulla\",\"address\":\"Camino Juan Jos\\u00e9, 453, 76\\u00ba C\",\"city\":\"Los Olivas de las Torres\",\"state\":\"Soria\"},{\"id\":\"TJ-BDK-82\",\"store_name\":\"Pizza King & Pasta\",\"address\":\"Traves\\u00eda Diana, 74, 1\\u00ba E\",\"city\":\"A Gallegos del Vall\\u00e8s\",\"state\":\"Tarragona\"},{\"id\":\"LR-ODC-99\",\"store_name\":\"Pizza y Algo M\\u00e1s\",\"address\":\"Ronda Arnau, 5, 4\\u00ba 8\\u00ba\",\"city\":\"Baca del Pozo\",\"state\":\"Santa Cruz de Tenerife\"},{\"id\":\"ZQ-SFD-60\",\"store_name\":\"Bella Pizza A Lemus Medio\",\"address\":\"Cami\\u00f1o Gabriel, 2, 05\\u00ba D\",\"city\":\"La Viera Medio\",\"state\":\"La Rioja\"},{\"id\":\"HN-UIQ-35\",\"store_name\":\"Pizza King #41\",\"address\":\"Ronda Marc, 12, 56\\u00ba A\",\"city\":\"O Anaya\",\"state\":\"Zaragoza\"},{\"id\":\"XH-DDQ-78\",\"store_name\":\"La Pizza King Express\",\"address\":\"Carrer Mart\\u00ednez, 725, Bajo 1\\u00ba\",\"city\":\"Mireles de San Pedro\",\"state\":\"Zaragoza\"},{\"id\":\"OF-LCX-78\",\"store_name\":\"La Donatello Italiana\",\"address\":\"Avinguda Espinal, 36, 98\\u00ba F\",\"city\":\"Carrera del Vall\\u00e8s\",\"state\":\"Burgos\"},{\"id\":\"VQ-KKL-40\",\"store_name\":\"Pizza del Barrio Express\",\"address\":\"Carrer Sandra, 573, 8\\u00ba F\",\"city\":\"Las Segovia Baja\",\"state\":\"Illes Balears\"},{\"id\":\"QJ-SUC-60\",\"store_name\":\"Quiero Pizza De la Torre\",\"address\":\"Calle Villegas, 79, 77\\u00ba C\",\"city\":\"As Puga del Vall\\u00e8s\",\"state\":\"Navarra\"},{\"id\":\"AK-TAR-85\",\"store_name\":\"La Pizza y Algo M\\u00e1s\",\"address\":\"Avinguda Tafoya, 56, 3\\u00ba 3\\u00ba\",\"city\":\"San Ort\\u00edz\",\"state\":\"Cantabria\"},{\"id\":\"NY-LSX-90\",\"store_name\":\"La Come Pizza #31\",\"address\":\"Praza Yaiza, 43, 7\\u00ba C\",\"city\":\"A Le\\u00f3n de Arriba\",\"state\":\"C\\u00f3rdoba\"},{\"id\":\"GV-JQC-23\",\"store_name\":\"Pizza Express Anaya\",\"address\":\"Pla\\u00e7a Mat\\u00edas, 852, 7\\u00ba 8\\u00ba\",\"city\":\"Las Rodr\\u00edquez de Lemos\",\"state\":\"Ciudad Real\"},{\"id\":\"VG-VFY-39\",\"store_name\":\"Pizza\",\"address\":\"Ruela Marco, 64, Bajos\",\"city\":\"San Guzm\\u00e1n de las Torres\",\"state\":\"M\\u00e1laga\"},{\"id\":\"EY-DUS-40\",\"store_name\":\"Roma Pizza Viera del Barco\",\"address\":\"Carrer Ana Mar\\u00eda, 262, 7\\u00ba B\",\"city\":\"Lim\\u00f3n Baja\",\"state\":\"Guipuzkoa\"},{\"id\":\"IH-ACZ-10\",\"store_name\":\"La Pizza Gourmet\",\"address\":\"Cami\\u00f1o Holgu\\u00edn, 87, 7\\u00ba C\",\"city\":\"Nava del Pened\\u00e8s\",\"state\":\"Toledo\"},{\"id\":\"WQ-XKZ-31\",\"store_name\":\"La Pizza de la Esquina 24h\",\"address\":\"Calle Francisca, 673, 1\\u00ba B\",\"city\":\"El Polo\",\"state\":\"Huesca\"},{\"id\":\"LG-QPR-10\",\"store_name\":\"Quiero Pizza\",\"address\":\"Avinguda Olmos, 9, 5\\u00ba A\",\"city\":\"Villa Adorno del Bages\",\"state\":\"Guadalajara\"},{\"id\":\"FI-NJN-20\",\"store_name\":\"La Pizza World #84\",\"address\":\"Ruela Maya, 5, Bajos\",\"city\":\"La Mesa del Pened\\u00e8s\",\"state\":\"\\u00c1lava\"},{\"id\":\"MB-AZX-27\",\"store_name\":\"Roma Pizza #19\",\"address\":\"Pla\\u00e7a Guillem, 31, Bajos\",\"city\":\"Los Meza del Bages\",\"state\":\"Le\\u00f3n\"},{\"id\":\"EX-IGR-07\",\"store_name\":\"Pizza de la Esquina\",\"address\":\"Avenida Colunga, 42, 28\\u00ba D\",\"city\":\"L' Amador\",\"state\":\"Ciudad Real\"},{\"id\":\"RD-EEJ-78\",\"store_name\":\"Come Pizza Premium\",\"address\":\"Passeig De la Fuente, 30, 7\\u00ba F\",\"city\":\"Vall Gayt\\u00e1n\",\"state\":\"Soria\"},{\"id\":\"TB-KLG-30\",\"store_name\":\"Pizza Master Ferrer\",\"address\":\"R\\u00faa Escobar, 7, \\u00c1tico 6\\u00ba\",\"city\":\"Vaca del Pened\\u00e8s\",\"state\":\"Alicante\"},{\"id\":\"KM-NQD-15\",\"store_name\":\"La Pizza House Os Ba\\u00f1uelos\",\"address\":\"Cami\\u00f1o \\u00c1ngeles, 4, 01\\u00ba B\",\"city\":\"El Murillo de San Pedro\",\"state\":\"Pontevedra\"},{\"id\":\"XH-FSL-92\",\"store_name\":\"La Pizza 24h\",\"address\":\"Traves\\u00eda Delagarza, 796, 75\\u00ba B\",\"city\":\"Ornelas Alta\",\"state\":\"\\u00c1lava\"},{\"id\":\"TR-OWJ-31\",\"store_name\":\"Pizza House #82\",\"address\":\"Plaza Ulloa, 55, 2\\u00ba F\",\"city\":\"El Chavarr\\u00eda\",\"state\":\"\\u00c1lava\"},{\"id\":\"PY-AMN-67\",\"store_name\":\"La Pizza\",\"address\":\"Plaza Sonia, 187, Bajo 3\\u00ba\",\"city\":\"El Barrios del Pened\\u00e8s\",\"state\":\"Vizcaya\"},{\"id\":\"VR-HFC-33\",\"store_name\":\"pizza al Paso #55\",\"address\":\"Travessera Ismael, 209, 15\\u00ba 0\\u00ba\",\"city\":\"Z\\u00fa\\u00f1iga del Pened\\u00e8s\",\"state\":\"Girona\"},{\"id\":\"AY-CRS-29\",\"store_name\":\"La Donatello #53\",\"address\":\"Praza Aina, 10, 50\\u00ba 4\\u00ba\",\"city\":\"San Mireles del Pozo\",\"state\":\"Palencia\"},{\"id\":\"JY-CPY-33\",\"store_name\":\"Pizza Master\",\"address\":\"Avinguda Romo, 233, Bajo 1\\u00ba\",\"city\":\"Espinal del Bages\",\"state\":\"Zaragoza\"},{\"id\":\"OX-ITU-50\",\"store_name\":\"Pizza y Algo M\\u00e1s\",\"address\":\"Praza Josefa, 732, Bajo 7\\u00ba\",\"city\":\"Reina Alta\",\"state\":\"\\u00c1lava\"},{\"id\":\"BP-MLO-23\",\"store_name\":\"Original Pizza Cadena del Mirador\",\"address\":\"Avenida Merino, 707, 3\\u00ba A\",\"city\":\"Vall Crespo\",\"state\":\"Melilla\"},{\"id\":\"SJ-LDG-59\",\"store_name\":\"Napoli 24h\",\"address\":\"Pla\\u00e7a Sara, 905, 93\\u00ba F\",\"city\":\"L' Alfonso\",\"state\":\"Ourense\"},{\"id\":\"OS-YUP-53\",\"store_name\":\"La Pizza 24h\",\"address\":\"Paseo Blasco, 38, 62\\u00ba C\",\"city\":\"Hern\\u00e1ndez de las Torres\",\"state\":\"Albacete\"},{\"id\":\"DT-XJW-16\",\"store_name\":\"la oveja Negra Premium\",\"address\":\"R\\u00faa Monta\\u00f1o, 311, 9\\u00ba\",\"city\":\"Z\\u00fa\\u00f1iga de Arriba\",\"state\":\"Pontevedra\"},{\"id\":\"IN-DQU-19\",\"store_name\":\"pizza al Paso Fresh\",\"address\":\"Travessera Monta\\u00f1ez, 816, 8\\u00ba 1\\u00ba\",\"city\":\"Villa Hern\\u00e1ndez\",\"state\":\"C\\u00f3rdoba\"},{\"id\":\"GC-HNJ-66\",\"store_name\":\"La Pizza\",\"address\":\"Paseo Santiago, 791, 56\\u00ba E\",\"city\":\"El Cerda del Pened\\u00e8s\",\"state\":\"Palencia\"},{\"id\":\"XP-JBH-65\",\"store_name\":\"Napoli Pastor\",\"address\":\"Plaza Alberto, 36, Entre suelo 3\\u00ba\",\"city\":\"Villa Delagarza de San Pedro\",\"state\":\"Badajoz\"},{\"id\":\"ME-OEB-25\",\"store_name\":\"Pizza de la Esquina\",\"address\":\"R\\u00faa Adam, 7, Bajo 7\\u00ba\",\"city\":\"L' Briones del Mirador\",\"state\":\"A Coru\\u00f1a\"},{\"id\":\"EE-HTB-82\",\"store_name\":\"la oveja Negra Lebr\\u00f3n de la Sierra\",\"address\":\"Travessera Cerda, 230, Bajos\",\"city\":\"El Gallardo de las Torres\",\"state\":\"Lleida\"},{\"id\":\"IB-FWC-53\",\"store_name\":\"Quiero Pizza & Pasta\",\"address\":\"Carrer Clara, 7, 91\\u00ba B\",\"city\":\"L' Briones Alta\",\"state\":\"Badajoz\"},{\"id\":\"XI-ZRR-49\",\"store_name\":\"Napoli & Grill\",\"address\":\"Praza Robles, 1, Bajo 0\\u00ba\",\"city\":\"L' Ort\\u00edz del Mirador\",\"state\":\"Segovia\"},{\"id\":\"IP-GXL-13\",\"store_name\":\"Quiero Pizza La Mascare\\u00f1as\",\"address\":\"Camino Narv\\u00e1ez, 782, 09\\u00ba C\",\"city\":\"El Gim\\u00e9nez Alta\",\"state\":\"Soria\"},{\"id\":\"KP-TDC-88\",\"store_name\":\"La Roma Pizza & Pasta\",\"address\":\"Carrer Rayan, 1, 5\\u00ba\",\"city\":\"Valent\\u00edn de Arriba\",\"state\":\"Asturias\"},{\"id\":\"RG-UIX-75\",\"store_name\":\"la oveja Negra & Pasta\",\"address\":\"Camino Jes\\u00fas, 37, Bajos\",\"city\":\"Os Contreras Medio\",\"state\":\"Madrid\"},{\"id\":\"LJ-OXJ-49\",\"store_name\":\"La Pizza Italiana\",\"address\":\"Avinguda Palomo, 9, 37\\u00ba E\",\"city\":\"La Preciado Baja\",\"state\":\"Las Palmas\"},{\"id\":\"NL-QFL-23\",\"store_name\":\"Pizza King Pelayo\",\"address\":\"Paseo Nora, 81, 6\\u00ba A\",\"city\":\"El Ceballos\",\"state\":\"Palencia\"},{\"id\":\"PC-XKX-64\",\"store_name\":\"Pizza Total Express\",\"address\":\"Traves\\u00eda Aitor, 55, 1\\u00ba F\",\"city\":\"Nieto del Puerto\",\"state\":\"Zaragoza\"},{\"id\":\"MP-VAF-07\",\"store_name\":\"La Pizza Express\",\"address\":\"Passeig Lorena, 17, 2\\u00ba F\",\"city\":\"San Olivares\",\"state\":\"Navarra\"},{\"id\":\"XL-PMO-90\",\"store_name\":\"Come Pizza Carre\\u00f3n de las Torres\",\"address\":\"Traves\\u00eda Pedroza, 738, 2\\u00ba E\",\"city\":\"San Irizarry de la Sierra\",\"state\":\"Ja\\u00e9n\"},{\"id\":\"BY-IRM-96\",\"store_name\":\"Pizza Express Rodrigo del Bages\",\"address\":\"Cami\\u00f1o Santana, 5, 53\\u00ba D\",\"city\":\"Padr\\u00f3n del Pened\\u00e8s\",\"state\":\"Lugo\"},{\"id\":\"JY-RPV-14\",\"store_name\":\"La Original Pizza Express\",\"address\":\"Camino Santana, 3, 31\\u00ba A\",\"city\":\"San Fonseca\",\"state\":\"Las Palmas\"},{\"id\":\"HH-HLN-72\",\"store_name\":\"La Super Queso Quezada\",\"address\":\"Avinguda Nicol\\u00e1s, 1, 14\\u00ba C\",\"city\":\"Vall Valle\",\"state\":\"La Rioja\"},{\"id\":\"AI-FTD-43\",\"store_name\":\"Original Pizza Rosales\",\"address\":\"Traves\\u00eda Montez, 41, 37\\u00ba E\",\"city\":\"El Ruiz de Ulla\",\"state\":\"Ourense\"},{\"id\":\"VF-XGX-16\",\"store_name\":\"Napoli\",\"address\":\"Camino Andrea, 344, 88\\u00ba D\",\"city\":\"Nieto del Bages\",\"state\":\"C\\u00e1diz\"},{\"id\":\"BD-LDW-79\",\"store_name\":\"Pizza de la Esquina & Grill\",\"address\":\"Ruela Escalante, 79, 20\\u00ba F\",\"city\":\"Lucas Baja\",\"state\":\"Castell\\u00f3n\"},{\"id\":\"FW-WDA-77\",\"store_name\":\"Donatello & Grill\",\"address\":\"Avinguda C\\u00e9sar, 3, 71\\u00ba 0\\u00ba\",\"city\":\"Villalobos del Mirador\",\"state\":\"Cantabria\"},{\"id\":\"FG-KOG-60\",\"store_name\":\"La Pizza Total #81\",\"address\":\"Ronda Francisca, 8, 53\\u00ba A\",\"city\":\"Carri\\u00f3n de Ulla\",\"state\":\"C\\u00e1ceres\"},{\"id\":\"ZL-RSJ-10\",\"store_name\":\"Pizza Total #19\",\"address\":\"Ronda Sergio, 29, 89\\u00ba A\",\"city\":\"El Del R\\u00edo del Mirador\",\"state\":\"Barcelona\"},{\"id\":\"VI-HXH-11\",\"store_name\":\"La Pizza\",\"address\":\"Avenida Lidia, 33, Entre suelo 4\\u00ba\",\"city\":\"Los Hernando\",\"state\":\"\\u00c1vila\"},{\"id\":\"XO-QJW-02\",\"store_name\":\"La Come Pizza #35\",\"address\":\"Cami\\u00f1o \\u00d3scar, 2, 16\\u00ba D\",\"city\":\"L' Mesa de Arriba\",\"state\":\"Zamora\"},{\"id\":\"VY-SGF-96\",\"store_name\":\"La Napoli #91\",\"address\":\"Ronda Mat\\u00edas, 507, 3\\u00ba\",\"city\":\"Los Garrido\",\"state\":\"Burgos\"},{\"id\":\"OP-ISW-88\",\"store_name\":\"Napoli & Grill\",\"address\":\"Avenida Gabriel, 56, 64\\u00ba A\",\"city\":\"Vall Cazares\",\"state\":\"Melilla\"},{\"id\":\"IY-JVN-84\",\"store_name\":\"Pizza Master Premium\",\"address\":\"Plaza Merino, 80, Bajo 1\\u00ba\",\"city\":\"Villa Ort\\u00edz del Pened\\u00e8s\",\"state\":\"Badajoz\"},{\"id\":\"RP-UIP-53\",\"store_name\":\"Come Pizza #18\",\"address\":\"Traves\\u00eda Isaac, 6, \\u00c1tico 8\\u00ba\",\"city\":\"Los Lebr\\u00f3n\",\"state\":\"\\u00c1vila\"},{\"id\":\"ZV-MNP-72\",\"store_name\":\"La Pizza House #60\",\"address\":\"Avinguda Unai, 9, Entre suelo 1\\u00ba\",\"city\":\"Vall Montemayor\",\"state\":\"Lugo\"},{\"id\":\"QM-LPR-35\",\"store_name\":\"Pizza Express #57\",\"address\":\"Pla\\u00e7a Rosa, 8, Entre suelo 0\\u00ba\",\"city\":\"Os Oliva del Mirador\",\"state\":\"La Rioja\"},{\"id\":\"TQ-QKC-62\",\"store_name\":\"Pizzer\\u00eda Arteaga de las Torres\",\"address\":\"Avinguda Mar\\u00eda Dolores, 211, 2\\u00ba F\",\"city\":\"San Cort\\u00e9s\",\"state\":\"M\\u00e1laga\"},{\"id\":\"GX-OUL-99\",\"store_name\":\"Original Pizza Fresh\",\"address\":\"Traves\\u00eda Renter\\u00eda, 397, 63\\u00ba B\",\"city\":\"Los S\\u00e1nchez\",\"state\":\"Huelva\"},{\"id\":\"LO-AXM-23\",\"store_name\":\"La La Pizza & Grill\",\"address\":\"Ronda Corona, 5, 6\\u00ba D\",\"city\":\"Escobedo del Vall\\u00e8s\",\"state\":\"C\\u00e1ceres\"},{\"id\":\"QX-SYL-63\",\"store_name\":\"Pizzer\\u00eda Villa del Pened\\u00e8s\",\"address\":\"Ronda Bruno, 9, \\u00c1tico 5\\u00ba\",\"city\":\"Las Madera\",\"state\":\"Melilla\"},{\"id\":\"OX-KNK-23\",\"store_name\":\"Pizza\",\"address\":\"Travessera Bernal, 496, Bajos\",\"city\":\"Rubio de Lemos\",\"state\":\"Valladolid\"},{\"id\":\"OH-JGD-24\",\"store_name\":\"La Pizza Las Arreola\",\"address\":\"Pla\\u00e7a Leire, 2, 5\\u00ba C\",\"city\":\"Monta\\u00f1ez de las Torres\",\"state\":\"Lugo\"},{\"id\":\"AV-EMB-50\",\"store_name\":\"Pizza Master Os De Jes\\u00fas\",\"address\":\"Paseo \\u00d3scar, 2, 30\\u00ba 7\\u00ba\",\"city\":\"Gir\\u00f3n del Puerto\",\"state\":\"Soria\"},{\"id\":\"YG-VYM-19\",\"store_name\":\"La Pizza La M\\u00e9ndez del Bages\",\"address\":\"Pla\\u00e7a Alcar\\u00e1z, 8, \\u00c1tico 1\\u00ba\",\"city\":\"La Zaragoza de Lemos\",\"state\":\"\\u00c1lava\"},{\"id\":\"FS-OTK-77\",\"store_name\":\"La Come Pizza El Pozo\",\"address\":\"Avinguda Paula, 36, Bajos\",\"city\":\"As Olivera Baja\",\"state\":\"Ja\\u00e9n\"},{\"id\":\"NN-XVG-88\",\"store_name\":\"Original Pizza\",\"address\":\"Ronda Adri\\u00e1n, 84, 3\\u00ba E\",\"city\":\"Tamayo del Puerto\",\"state\":\"Murcia\"},{\"id\":\"EQ-ZJM-14\",\"store_name\":\"La Roma Pizza Vall Rom\\u00e1n\",\"address\":\"Paseo Marrero, 84, Bajos\",\"city\":\"Alfonso de Arriba\",\"state\":\"Cantabria\"},{\"id\":\"JI-IVT-53\",\"store_name\":\"Pizza Master Premium\",\"address\":\"Praza De la Cruz, 586, 46\\u00ba B\",\"city\":\"Villa Sevilla Baja\",\"state\":\"Ourense\"},{\"id\":\"WY-XPM-09\",\"store_name\":\"Come Pizza\",\"address\":\"Cami\\u00f1o Monta\\u00f1o, 779, 47\\u00ba A\",\"city\":\"Los Roybal\",\"state\":\"Pontevedra\"},{\"id\":\"HA-YWA-36\",\"store_name\":\"La Pizza Express & Grill\",\"address\":\"Cami\\u00f1o Valeria, 3, 27\\u00ba E\",\"city\":\"San Zepeda de la Sierra\",\"state\":\"A Coru\\u00f1a\"},{\"id\":\"YR-YLA-22\",\"store_name\":\"Quiero Pizza #58\",\"address\":\"Camino Claudia, 5, \\u00c1tico 6\\u00ba\",\"city\":\"Atencio Medio\",\"state\":\"Guadalajara\"},{\"id\":\"MD-BAX-57\",\"store_name\":\"Roma Pizza\",\"address\":\"Avinguda Jos\\u00e9 Manuel, 32, 2\\u00ba E\",\"city\":\"As Echevarr\\u00eda del Pozo\",\"state\":\"Madrid\"},{\"id\":\"TJ-ESY-56\",\"store_name\":\"Super Queso #75\",\"address\":\"Travessera Sol\\u00eds, 490, 1\\u00ba\",\"city\":\"Los Rivas\",\"state\":\"Huelva\"},{\"id\":\"FE-WTM-11\",\"store_name\":\"La Pizza Express & Pasta\",\"address\":\"Passeig Quintero, 511, 2\\u00ba A\",\"city\":\"O Negr\\u00f3n\",\"state\":\"Cantabria\"},{\"id\":\"RQ-VED-71\",\"store_name\":\"La Super Queso Villa Arevalo del Pened\\u00e8s\",\"address\":\"Plaza Andr\\u00e9s, 5, 5\\u00ba 9\\u00ba\",\"city\":\"Los Montemayor\",\"state\":\"Navarra\"},{\"id\":\"KA-RLE-80\",\"store_name\":\"Pizza House\",\"address\":\"Cami\\u00f1o Carlos, 23, 41\\u00ba C\",\"city\":\"Cazares de Ulla\",\"state\":\"Ciudad Real\"},{\"id\":\"HQ-HNF-72\",\"store_name\":\"Donatello Italiana\",\"address\":\"Avenida Alexandra, 227, 11\\u00ba B\",\"city\":\"L' Medina Baja\",\"state\":\"Segovia\"},{\"id\":\"QN-EPK-67\",\"store_name\":\"Pizza y Algo M\\u00e1s Express\",\"address\":\"Ronda Galarza, 359, 0\\u00ba F\",\"city\":\"Os Cuevas\",\"state\":\"Huesca\"},{\"id\":\"VG-GBB-24\",\"store_name\":\"Pizza Total Italiana\",\"address\":\"Ronda Teresa, 10, 5\\u00ba E\",\"city\":\"Las Berm\\u00fadez\",\"state\":\"Guadalajara\"},{\"id\":\"DA-KKO-85\",\"store_name\":\"Pizza de la Esquina\",\"address\":\"R\\u00faa Yolanda, 829, 7\\u00ba D\",\"city\":\"Vigil del Barco\",\"state\":\"Guipuzkoa\"},{\"id\":\"OS-WPY-10\",\"store_name\":\"Pizza House 24h\",\"address\":\"Cami\\u00f1o Adam, 958, 7\\u00ba 3\\u00ba\",\"city\":\"Delao de San Pedro\",\"state\":\"Vizcaya\"},{\"id\":\"TK-SXO-80\",\"store_name\":\"Original Pizza\",\"address\":\"Ruela Santiago, 5, 23\\u00ba C\",\"city\":\"Los Arias\",\"state\":\"Madrid\"},{\"id\":\"UE-BRF-74\",\"store_name\":\"Original Pizza #58\",\"address\":\"Plaza Jan, 3, 6\\u00ba E\",\"city\":\"Qui\\u00f1ones del Bages\",\"state\":\"Valencia\"},{\"id\":\"VZ-LKI-10\",\"store_name\":\"Pizzer\\u00eda Italiana\",\"address\":\"Praza Aitor, 2, 39\\u00ba E\",\"city\":\"San Villar\",\"state\":\"Toledo\"},{\"id\":\"TK-JBN-38\",\"store_name\":\"Roma Pizza Fresh\",\"address\":\"Plaza Rodarte, 668, Bajos\",\"city\":\"El Mar\\u00edn\",\"state\":\"Pontevedra\"},{\"id\":\"RD-DOZ-40\",\"store_name\":\"La Donatello 24h\",\"address\":\"Camino Robledo, 7, 4\\u00ba D\",\"city\":\"Jim\\u00ednez de Arriba\",\"state\":\"Barcelona\"},{\"id\":\"DR-UXZ-66\",\"store_name\":\"Pizza King Premium\",\"address\":\"Cami\\u00f1o Garay, 9, 93\\u00ba D\",\"city\":\"L' Exp\\u00f3sito\",\"state\":\"Zaragoza\"},{\"id\":\"XK-HLX-16\",\"store_name\":\"Quiero Pizza #92\",\"address\":\"R\\u00faa Manzano, 30, 5\\u00ba D\",\"city\":\"Lovato Medio\",\"state\":\"C\\u00e1ceres\"},{\"id\":\"NY-CIG-30\",\"store_name\":\"Pizzer\\u00eda Ceja\",\"address\":\"Avenida H\\u00e9ctor, 274, 03\\u00ba C\",\"city\":\"O Abad del Barco\",\"state\":\"Toledo\"},{\"id\":\"KA-NQX-25\",\"store_name\":\"Super Queso O Cisneros de Lemos\",\"address\":\"Plaza Jordi, 733, 87\\u00ba A\",\"city\":\"Sol\\u00eds del Barco\",\"state\":\"C\\u00e1diz\"},{\"id\":\"AZ-LSF-94\",\"store_name\":\"La Pizza y Algo M\\u00e1s Moya\",\"address\":\"Paseo Nayara, 54, \\u00c1tico 0\\u00ba\",\"city\":\"Avil\\u00e9s del Puerto\",\"state\":\"\\u00c1vila\"},{\"id\":\"GJ-EJG-02\",\"store_name\":\"Come Pizza Prado\",\"address\":\"Passeig Delr\\u00edo, 5, 2\\u00ba C\",\"city\":\"Vall Villar\",\"state\":\"Lugo\"},{\"id\":\"QP-FAB-58\",\"store_name\":\"La Roma Pizza\",\"address\":\"Camino Yeray, 44, 99\\u00ba F\",\"city\":\"Las De Jes\\u00fas del Pened\\u00e8s\",\"state\":\"C\\u00e1diz\"},{\"id\":\"ZX-YET-82\",\"store_name\":\"La Pizza World Italiana\",\"address\":\"Ruela Blanca, 53, Entre suelo 3\\u00ba\",\"city\":\"El Rubio del Mirador\",\"state\":\"Teruel\"},{\"id\":\"JE-CDT-61\",\"store_name\":\"La Pizza Master Aguirre\",\"address\":\"Paseo Reyes, 5, 94\\u00ba E\",\"city\":\"Vall Linares del Pozo\",\"state\":\"A Coru\\u00f1a\"}]"
+                      }
+                    },
+                    "description": null
+                  },
+                  {
+                    "v": "17",
+                    "name": "show store",
+                    "method": "GET",
+                    "endpoint": "http://127.0.0.1:8000/api/panel/manage/store/AA-AAA-00",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "bearer",
+                      "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {
+                      "show store": {
+                        "name": "show store",
+                        "originalRequest": {
+                          "v": "6",
+                          "name": "show store",
+                          "method": "GET",
+                          "endpoint": "http://127.0.0.1:8000/api/panel/manage/store/AA-AAA-00",
+                          "headers": [],
+                          "params": [],
+                          "body": {
+                            "contentType": null,
+                            "body": null
+                          },
+                          "auth": {
+                            "authType": "bearer",
+                            "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                            "authActive": true
+                          },
+                          "requestVariables": []
+                        },
+                        "status": "200 OK",
+                        "code": 200,
+                        "headers": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Host",
+                            "value": "127.0.0.1:8000"
+                          },
+                          {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                          },
+                          {
+                            "key": "Connection",
+                            "value": "close"
+                          },
+                          {
+                            "key": "Cache-Control",
+                            "value": "no-cache, private"
+                          },
+                          {
+                            "key": "Date",
+                            "value": "Mon, 13 Apr 2026 17:24:34 GMT"
+                          },
+                          {
+                            "key": "X-Powered-By",
+                            "value": "PHP/8.5.4"
+                          }
+                        ],
+                        "body": "{\"id\":\"AA-AAA-00\",\"store_name\":\"Default Store\",\"address\":null,\"city\":null,\"state\":null}"
+                      }
+                    },
+                    "description": null
+                  },
+                  {
+                    "v": "17",
+                    "name": "new store",
+                    "method": "POST",
+                    "endpoint": "http://127.0.0.1:8000/api/panel/manage/store",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "bearer",
+                      "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": "application/json",
+                      "body": "{\n  \"id\": \"QQ-QQQ-99\",\n  \"store_name\": \"qqqqqq\",\n  \"lastname\": \"qqqqqqqq\",\n  \"address\": \"qqqqqqqqqqqqq\",\n  \"city\": \"qqqqqqqqq\",\n  \"state\": \"qqqqqqqqq\"\n}"
+                    },
+                    "requestVariables": [],
+                    "responses": {
+                      "new store": {
+                        "name": "new store",
+                        "originalRequest": {
+                          "v": "6",
+                          "name": "new store",
+                          "method": "POST",
+                          "endpoint": "http://127.0.0.1:8000/api/panel/manage/store",
+                          "headers": [],
+                          "params": [],
+                          "body": {
+                            "contentType": "application/json",
+                            "body": "{\n  \"id\": \"QQ-QQQ-99\",\n  \"store_name\": \"qqqqqq\",\n  \"lastname\": \"qqqqqqqq\",\n  \"address\": \"qqqqqqqqqqqqq\",\n  \"city\": \"qqqqqqqqq\",\n  \"state\": \"qqqqqqqqq\"\n}"
+                          },
+                          "auth": {
+                            "authType": "bearer",
+                            "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                            "authActive": true
+                          },
+                          "requestVariables": []
+                        },
+                        "status": "201 Created",
+                        "code": 201,
+                        "headers": [
+                          {
+                            "key": "Connection",
+                            "value": "close"
+                          },
+                          {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                          },
+                          {
+                            "key": "Cache-Control",
+                            "value": "no-cache, private"
+                          },
+                          {
+                            "key": "X-Powered-By",
+                            "value": "PHP/8.5.4"
+                          },
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Host",
+                            "value": "127.0.0.1:8000"
+                          },
+                          {
+                            "key": "Date",
+                            "value": "Mon, 13 Apr 2026 17:28:46 GMT"
+                          }
+                        ],
+                        "body": "{\"id\":\"QQ-QQQ-99\",\"store_name\":\"qqqqqq\",\"address\":\"qqqqqqqqqqqqq\",\"city\":\"qqqqqqqqq\",\"state\":\"qqqqqqqqq\"}"
+                      }
+                    },
+                    "description": null
+                  },
+                  {
+                    "v": "17",
+                    "name": "delete store",
+                    "method": "DELETE",
+                    "endpoint": "http://127.0.0.1:8000/api/panel/manage/store/QQ-QQQ-99",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "bearer",
+                      "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {
+                      "delete store": {
+                        "name": "delete store",
+                        "originalRequest": {
+                          "v": "6",
+                          "name": "delete store",
+                          "method": "DELETE",
+                          "endpoint": "http://127.0.0.1:8000/api/panel/manage/store/QQ-QQQ-99",
+                          "headers": [],
+                          "params": [],
+                          "body": {
+                            "contentType": null,
+                            "body": null
+                          },
+                          "auth": {
+                            "authType": "bearer",
+                            "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                            "authActive": true
+                          },
+                          "requestVariables": []
+                        },
+                        "status": "200 OK",
+                        "code": 200,
+                        "headers": [
+                          {
+                            "key": "Date",
+                            "value": "Mon, 13 Apr 2026 17:31:32 GMT"
+                          },
+                          {
+                            "key": "X-Powered-By",
+                            "value": "PHP/8.5.4"
+                          },
+                          {
+                            "key": "Cache-Control",
+                            "value": "no-cache, private"
+                          },
+                          {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                          },
+                          {
+                            "key": "Connection",
+                            "value": "close"
+                          },
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Host",
+                            "value": "127.0.0.1:8000"
+                          }
+                        ],
+                        "body": "{\"message\":\"Store deleted successfully\"}"
+                      }
+                    },
+                    "description": null
+                  }
+                ],
+                "auth": {
+                  "authType": "inherit",
+                  "authActive": true
+                },
+                "headers": [],
+                "variables": [],
+                "description": null
+              },
+              {
+                "v": 11,
+                "name": "categories",
+                "folders": [],
+                "requests": [
+                  {
+                    "v": "17",
+                    "name": "all categories",
+                    "method": "GET",
+                    "endpoint": "http://127.0.0.1:8000/api/panel/manage/category",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "bearer",
+                      "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {
+                      "all categories": {
+                        "name": "all categories",
+                        "originalRequest": {
+                          "v": "6",
+                          "name": "all categories",
+                          "method": "GET",
+                          "endpoint": "http://127.0.0.1:8000/api/panel/manage/category",
+                          "headers": [],
+                          "params": [],
+                          "body": {
+                            "contentType": null,
+                            "body": null
+                          },
+                          "auth": {
+                            "authType": "bearer",
+                            "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                            "authActive": true
+                          },
+                          "requestVariables": []
+                        },
+                        "status": "200 OK",
+                        "code": 200,
+                        "headers": [
+                          {
+                            "key": "Cache-Control",
+                            "value": "no-cache, private"
+                          },
+                          {
+                            "key": "Date",
+                            "value": "Mon, 13 Apr 2026 17:37:31 GMT"
+                          },
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "X-Powered-By",
+                            "value": "PHP/8.5.4"
+                          },
+                          {
+                            "key": "Connection",
+                            "value": "close"
+                          },
+                          {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                          },
+                          {
+                            "key": "Host",
+                            "value": "127.0.0.1:8000"
+                          }
+                        ],
+                        "body": "[{\"category_id\":\"A\",\"category_name\":\"Pizzas Cl\\u00e1sicas\"},{\"category_id\":\"B\",\"category_name\":\"Pizzas Especiales\"},{\"category_id\":\"C\",\"category_name\":\"Empanadas\"},{\"category_id\":\"D\",\"category_name\":\"Entradas u otros\"},{\"category_id\":\"E\",\"category_name\":\"Bebidas\"}]"
+                      }
+                    },
+                    "description": null
+                  },
+                  {
+                    "v": "17",
+                    "name": "show category",
+                    "method": "GET",
+                    "endpoint": "http://127.0.0.1:8000/api/panel/manage/category/B",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "bearer",
+                      "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {
+                      "show category": {
+                        "name": "show category",
+                        "originalRequest": {
+                          "v": "6",
+                          "name": "show category",
+                          "method": "GET",
+                          "endpoint": "http://127.0.0.1:8000/api/panel/manage/category/B",
+                          "headers": [],
+                          "params": [],
+                          "body": {
+                            "contentType": null,
+                            "body": null
+                          },
+                          "auth": {
+                            "authType": "bearer",
+                            "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                            "authActive": true
+                          },
+                          "requestVariables": []
+                        },
+                        "status": "200 OK",
+                        "code": 200,
+                        "headers": [
+                          {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                          },
+                          {
+                            "key": "Connection",
+                            "value": "close"
+                          },
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "X-Powered-By",
+                            "value": "PHP/8.5.4"
+                          },
+                          {
+                            "key": "Host",
+                            "value": "127.0.0.1:8000"
+                          },
+                          {
+                            "key": "Date",
+                            "value": "Mon, 13 Apr 2026 17:38:15 GMT"
+                          },
+                          {
+                            "key": "Cache-Control",
+                            "value": "no-cache, private"
+                          }
+                        ],
+                        "body": "{\"category_id\":\"B\",\"category_name\":\"Pizzas Especiales\"}"
+                      }
+                    },
+                    "description": null
+                  },
+                  {
+                    "v": "17",
+                    "name": "new category",
+                    "method": "POST",
+                    "endpoint": "http://127.0.0.1:8000/api/panel/manage/category",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "bearer",
+                      "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": "application/json",
+                      "body": "{\n  \"category_id\":\"W\",\n  \"category_name\": \"qqqqqqqqqqqqqqq\"\n}"
+                    },
+                    "requestVariables": [],
+                    "responses": {
+                      "new category": {
+                        "name": "new category",
+                        "originalRequest": {
+                          "v": "6",
+                          "name": "new category",
+                          "method": "POST",
+                          "endpoint": "http://127.0.0.1:8000/api/panel/manage/category",
+                          "headers": [],
+                          "params": [],
+                          "body": {
+                            "contentType": "application/json",
+                            "body": "{\n  \"category_id\":\"W\",\n  \"category_name\": \"qqqqqqqqqqqqqqq\"\n}"
+                          },
+                          "auth": {
+                            "authType": "bearer",
+                            "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                            "authActive": true
+                          },
+                          "requestVariables": []
+                        },
+                        "status": "201 Created",
+                        "code": 201,
+                        "headers": [
+                          {
+                            "key": "Cache-Control",
+                            "value": "no-cache, private"
+                          },
+                          {
+                            "key": "Date",
+                            "value": "Mon, 13 Apr 2026 17:41:24 GMT"
+                          },
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                          },
+                          {
+                            "key": "X-Powered-By",
+                            "value": "PHP/8.5.4"
+                          },
+                          {
+                            "key": "Host",
+                            "value": "127.0.0.1:8000"
+                          },
+                          {
+                            "key": "Connection",
+                            "value": "close"
+                          }
+                        ],
+                        "body": "{\"category_id\":\"W\",\"category_name\":\"qqqqqqqqqqqqqqq\"}"
+                      }
+                    },
+                    "description": null
+                  },
+                  {
+                    "v": "17",
+                    "name": "delete category",
+                    "method": "DELETE",
+                    "endpoint": "http://127.0.0.1:8000/api/panel/manage/category/W",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "bearer",
+                      "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {
+                      "delete category": {
+                        "name": "delete category",
+                        "originalRequest": {
+                          "v": "6",
+                          "name": "delete category",
+                          "method": "DELETE",
+                          "endpoint": "http://127.0.0.1:8000/api/panel/manage/category/W",
+                          "headers": [],
+                          "params": [],
+                          "body": {
+                            "contentType": null,
+                            "body": null
+                          },
+                          "auth": {
+                            "authType": "bearer",
+                            "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                            "authActive": true
+                          },
+                          "requestVariables": []
+                        },
+                        "status": "200 OK",
+                        "code": 200,
+                        "headers": [
+                          {
+                            "key": "Date",
+                            "value": "Mon, 13 Apr 2026 17:42:44 GMT"
+                          },
+                          {
+                            "key": "X-Powered-By",
+                            "value": "PHP/8.5.4"
+                          },
+                          {
+                            "key": "Access-Control-Allow-Origin",
+                            "value": "*"
+                          },
+                          {
+                            "key": "Connection",
+                            "value": "close"
+                          },
+                          {
+                            "key": "Cache-Control",
+                            "value": "no-cache, private"
+                          },
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Host",
+                            "value": "127.0.0.1:8000"
+                          }
+                        ],
+                        "body": "{\"message\":\"Category deleted successfully\"}"
+                      }
+                    },
+                    "description": null
+                  }
+                ],
+                "auth": {
+                  "authActive": true,
+                  "authType": "inherit"
+                },
+                "headers": [],
+                "variables": [],
+                "description": null
+              }
+            ],
+            "requests": [],
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "headers": [],
+            "variables": [],
+            "description": null
+          },
+          {
+            "v": 11,
+            "name": "clientes",
+            "folders": [],
+            "requests": [
+              {
+                "v": "17",
+                "name": "all customer",
+                "method": "GET",
+                "endpoint": "http://127.0.0.1:8000/api/panel/clientes/customer",
+                "params": [],
+                "headers": [],
+                "preRequestScript": "",
+                "testScript": "",
+                "auth": {
+                  "authType": "bearer",
+                  "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                  "authActive": true
+                },
+                "body": {
+                  "contentType": null,
+                  "body": null
+                },
+                "requestVariables": [],
+                "responses": {
+                  "all customer": {
+                    "name": "all customer",
+                    "originalRequest": {
+                      "v": "6",
+                      "name": "all customer",
+                      "method": "GET",
+                      "endpoint": "http://127.0.0.1:8000/api/panel/clientes/customer",
+                      "headers": [],
+                      "params": [],
+                      "body": {
+                        "contentType": null,
+                        "body": null
+                      },
+                      "auth": {
+                        "authType": "bearer",
+                        "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                        "authActive": true
+                      },
+                      "requestVariables": []
+                    },
+                    "status": "200 OK",
+                    "code": 200,
+                    "headers": [
+                      {
+                        "key": "Date",
+                        "value": "Mon, 13 Apr 2026 17:45:50 GMT"
+                      },
+                      {
+                        "key": "X-Powered-By",
+                        "value": "PHP/8.5.4"
+                      },
+                      {
+                        "key": "Host",
+                        "value": "127.0.0.1:8000"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Cache-Control",
+                        "value": "no-cache, private"
+                      },
+                      {
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "*"
+                      },
+                      {
+                        "key": "Connection",
+                        "value": "close"
+                      }
+                    ],
+                    "body": "[{\"dni\":\"75283198N\",\"firstname\":\"Carla\",\"lastname\":\"Calvillo Sarabia\",\"birthdate\":\"1970-07-24\",\"gender\":\"female\",\"email\":\"enrique.rojas@example.com\",\"phone\":\"911 07 4044\",\"address\":\"Calle Gerard, 114, 83\\u00ba C\",\"city\":\"Villa Rinc\\u00f3n\",\"state\":\"Tarragona\"},{\"dni\":\"42110161J\",\"firstname\":\"Ver\\u00f3nica\",\"lastname\":\"Jurado Baeza\",\"birthdate\":\"1988-12-12\",\"gender\":\"female\",\"email\":\"oquendo.nahia@example.org\",\"phone\":\"+34 969-16-0925\",\"address\":\"Ronda Enrique, 48, 3\\u00ba C\",\"city\":\"Botello de Arriba\",\"state\":\"Badajoz\"},{\"dni\":\"21212725D\",\"firstname\":\"Bruno\",\"lastname\":\"Barrientos Rivas\",\"birthdate\":\"1988-12-01\",\"gender\":\"male\",\"email\":\"vargas.victoria@example.org\",\"phone\":\"+34 948 438521\",\"address\":\"R\\u00faa Pablo, 967, 2\\u00ba 7\\u00ba\",\"city\":\"L' Santill\\u00e1n de Lemos\",\"state\":\"C\\u00e1diz\"},{\"dni\":\"21700424Q\",\"firstname\":\"Juan Jos\\u00e9\",\"lastname\":\"Valdivia Gonz\\u00e1lez\",\"birthdate\":\"2001-11-24\",\"gender\":\"male\",\"email\":\"carolina15@example.net\",\"phone\":\"917 089449\",\"address\":\"R\\u00faa Y\\u00e1\\u00f1ez, 70, 7\\u00ba A\",\"city\":\"A Franco\",\"state\":\"Toledo\"},{\"dni\":\"09491796H\",\"firstname\":\"Rosario\",\"lastname\":\"Villar Mart\\u00ednez\",\"birthdate\":\"1988-03-31\",\"gender\":\"female\",\"email\":\"mara53@example.org\",\"phone\":\"943 26 9383\",\"address\":\"Calle Laia, 5, 1\\u00ba B\",\"city\":\"Mojica del Vall\\u00e8s\",\"state\":\"Albacete\"},{\"dni\":\"17250643E\",\"firstname\":\"Celia\",\"lastname\":\"Valero Badillo\",\"birthdate\":\"1983-02-08\",\"gender\":\"female\",\"email\":\"margarita31@example.net\",\"phone\":\"+34 925-69-3459\",\"address\":\"Avinguda Rocha, 13, 52\\u00ba F\",\"city\":\"As Samaniego\",\"state\":\"Huelva\"},{\"dni\":\"65706883T\",\"firstname\":\"Mario\",\"lastname\":\"Santacruz Cintr\\u00f3n\",\"birthdate\":\"1991-11-16\",\"gender\":\"male\",\"email\":\"cesar39@example.net\",\"phone\":\"975-69-2426\",\"address\":\"Avinguda Montemayor, 3, 7\\u00ba\",\"city\":\"El Irizarry del Pozo\",\"state\":\"Ciudad Real\"},{\"dni\":\"55305265V\",\"firstname\":\"Luisa\",\"lastname\":\"Cervantes Espinosa\",\"birthdate\":\"1978-12-16\",\"gender\":\"female\",\"email\":\"bbermejo@example.org\",\"phone\":\"+34 943705336\",\"address\":\"Praza Roc\\u00edo, 1, 86\\u00ba 0\\u00ba\",\"city\":\"Morales del Vall\\u00e8s\",\"state\":\"Santa Cruz de Tenerife\"},{\"dni\":\"58719225H\",\"firstname\":\"\\u00c1ngela\",\"lastname\":\"Calder\\u00f3n Alonso\",\"birthdate\":\"1971-06-25\",\"gender\":\"female\",\"email\":\"biel39@example.org\",\"phone\":\"992 37 6160\",\"address\":\"Ruela Samuel, 90, 62\\u00ba C\",\"city\":\"Abrego del Pened\\u00e8s\",\"state\":\"Lleida\"},{\"dni\":\"47819470D\",\"firstname\":\"Asier\",\"lastname\":\"Villag\\u00f3mez Ter\\u00e1n\",\"birthdate\":\"1994-09-13\",\"gender\":\"male\",\"email\":\"santiago.lucas@example.net\",\"phone\":\"901-56-2295\",\"address\":\"Cami\\u00f1o Casas, 38, Bajos\",\"city\":\"Venegas del Barco\",\"state\":\"Valencia\"},{\"dni\":\"43464977Z\",\"firstname\":\"Eduardo\",\"lastname\":\"Cerv\\u00e1ntez Polanco\",\"birthdate\":\"1999-08-24\",\"gender\":\"male\",\"email\":\"tdelacruz@example.net\",\"phone\":\"978-01-2054\",\"address\":\"Pla\\u00e7a Sandra, 22, 6\\u00ba D\",\"city\":\"Baeza del Mirador\",\"state\":\"Valencia\"},{\"dni\":\"34861099E\",\"firstname\":\"Jos\\u00e9 Antonio\",\"lastname\":\"Meza Carbajal\",\"birthdate\":\"1982-07-29\",\"gender\":\"male\",\"email\":\"cantu.daniel@example.net\",\"phone\":\"904 492363\",\"address\":\"Cami\\u00f1o Eduardo, 24, 3\\u00ba D\",\"city\":\"Cano del Bages\",\"state\":\"C\\u00e1ceres\"},{\"dni\":\"29264795D\",\"firstname\":\"Lorena\",\"lastname\":\"Cobo Luevano\",\"birthdate\":\"2001-05-10\",\"gender\":\"female\",\"email\":\"paula86@example.com\",\"phone\":\"+34 940978111\",\"address\":\"Traves\\u00eda Merino, 49, 58\\u00ba 0\\u00ba\",\"city\":\"Valdez Alta\",\"state\":\"La Rioja\"},{\"dni\":\"70674369S\",\"firstname\":\"Olga\",\"lastname\":\"Carre\\u00f3n Oliva\",\"birthdate\":\"2001-11-04\",\"gender\":\"female\",\"email\":\"lara70@example.net\",\"phone\":\"+34 967 462585\",\"address\":\"Travessera Barrientos, 66, 3\\u00ba C\",\"city\":\"Vanegas del Puerto\",\"state\":\"C\\u00e1ceres\"},{\"dni\":\"97379801D\",\"firstname\":\"Alejandra\",\"lastname\":\"Zavala Silva\",\"birthdate\":\"2002-06-17\",\"gender\":\"female\",\"email\":\"roque.mariapilar@example.org\",\"phone\":\"+34 935-05-4317\",\"address\":\"Praza Marc, 18, 3\\u00ba 3\\u00ba\",\"city\":\"San Rodr\\u00edguez\",\"state\":\"Barcelona\"},{\"dni\":\"83335102F\",\"firstname\":\"Nora\",\"lastname\":\"Guerra Rosa\",\"birthdate\":\"2001-10-19\",\"gender\":\"female\",\"email\":\"daniela52@example.org\",\"phone\":\"+34 919 25 8484\",\"address\":\"Avenida Noa, 404, 59\\u00ba C\",\"city\":\"Romero del Pened\\u00e8s\",\"state\":\"C\\u00e1diz\"},{\"dni\":\"65219015P\",\"firstname\":\"Biel\",\"lastname\":\"Far\\u00edas Coronado\",\"birthdate\":\"1976-06-25\",\"gender\":\"male\",\"email\":\"gamboa.patricia@example.org\",\"phone\":\"947 996213\",\"address\":\"Passeig Villag\\u00f3mez, 891, 2\\u00ba 0\\u00ba\",\"city\":\"El Zapata\",\"state\":\"Albacete\"},{\"dni\":\"36910999R\",\"firstname\":\"Rafael\",\"lastname\":\"Vaca Saucedo\",\"birthdate\":\"1994-12-15\",\"gender\":\"male\",\"email\":\"itejada@example.org\",\"phone\":\"990 783409\",\"address\":\"Pla\\u00e7a Osorio, 92, 3\\u00ba B\",\"city\":\"Reina del Pozo\",\"state\":\"Valencia\"},{\"dni\":\"77937494Q\",\"firstname\":\"Jaime\",\"lastname\":\"Arenas Carmona\",\"birthdate\":\"1977-12-15\",\"gender\":\"male\",\"email\":\"sofia.quinones@example.org\",\"phone\":\"+34 917 616566\",\"address\":\"Traves\\u00eda Abreu, 6, Bajos\",\"city\":\"L' Delao\",\"state\":\"Ciudad Real\"},{\"dni\":\"24317276C\",\"firstname\":\"Nicol\\u00e1s\",\"lastname\":\"Castellanos Rivas\",\"birthdate\":\"2007-07-05\",\"gender\":\"male\",\"email\":\"lramirez@example.com\",\"phone\":\"942425424\",\"address\":\"Praza Elena, 25, 04\\u00ba 0\\u00ba\",\"city\":\"Los Rodrigo del Mirador\",\"state\":\"Huelva\"},{\"dni\":\"61638837X\",\"firstname\":\"Isaac\",\"lastname\":\"Villalba Alba\",\"birthdate\":\"1980-06-15\",\"gender\":\"male\",\"email\":\"sancho.enrique@example.com\",\"phone\":\"937-933201\",\"address\":\"Calle Carrero, 534, 0\\u00ba A\",\"city\":\"As Mel\\u00e9ndez de las Torres\",\"state\":\"Palencia\"},{\"dni\":\"73766995S\",\"firstname\":\"Mar\\u00eda Pilar\",\"lastname\":\"Morales Zambrano\",\"birthdate\":\"1970-11-21\",\"gender\":\"female\",\"email\":\"nlira@example.com\",\"phone\":\"+34 905-192635\",\"address\":\"Camino Nadia, 341, 52\\u00ba A\",\"city\":\"O Arevalo Baja\",\"state\":\"Cuenca\"},{\"dni\":\"89865753S\",\"firstname\":\"Gabriela\",\"lastname\":\"Villanueva Molina\",\"birthdate\":\"1979-09-02\",\"gender\":\"female\",\"email\":\"franciscojavier44@example.net\",\"phone\":\"+34 949 304266\",\"address\":\"Pla\\u00e7a Cort\\u00e9s, 526, Entre suelo 5\\u00ba\",\"city\":\"Garza Baja\",\"state\":\"Madrid\"},{\"dni\":\"47420089T\",\"firstname\":\"Jordi\",\"lastname\":\"J\\u00e1quez Ant\\u00f3n\",\"birthdate\":\"1979-12-28\",\"gender\":\"male\",\"email\":\"mar.muro@example.net\",\"phone\":\"984-308995\",\"address\":\"Ruela Pilar, 87, 88\\u00ba D\",\"city\":\"El S\\u00e1ez Medio\",\"state\":\"Illes Balears\"},{\"dni\":\"35095880L\",\"firstname\":\"Nuria\",\"lastname\":\"Cab\\u00e1n Aparicio\",\"birthdate\":\"1970-12-10\",\"gender\":\"female\",\"email\":\"alonzo.amparo@example.org\",\"phone\":\"+34 999 400930\",\"address\":\"Avenida Adam, 36, 2\\u00ba\",\"city\":\"Jim\\u00ednez de la Sierra\",\"state\":\"Girona\"},{\"dni\":\"04161284D\",\"firstname\":\"Ainhoa\",\"lastname\":\"Navarro Bravo\",\"birthdate\":\"2006-06-19\",\"gender\":\"female\",\"email\":\"barguello@example.com\",\"phone\":\"996-11-1490\",\"address\":\"Praza Fajardo, 6, Bajos\",\"city\":\"Otero Alta\",\"state\":\"Ceuta\"},{\"dni\":\"63882524R\",\"firstname\":\"Laia\",\"lastname\":\"Pedraza Razo\",\"birthdate\":\"1990-12-26\",\"gender\":\"female\",\"email\":\"nahia.zarate@example.com\",\"phone\":\"920-703927\",\"address\":\"Plaza Ona, 709, 9\\u00ba B\",\"city\":\"Rueda del Puerto\",\"state\":\"C\\u00f3rdoba\"},{\"dni\":\"19735950H\",\"firstname\":\"Enrique\",\"lastname\":\"Montez De la Cruz\",\"birthdate\":\"2003-05-08\",\"gender\":\"male\",\"email\":\"alexandra.martin@example.net\",\"phone\":\"+34 984 851861\",\"address\":\"Camino Mel\\u00e9ndez, 37, 6\\u00ba F\",\"city\":\"A Medina del Barco\",\"state\":\"Castell\\u00f3n\"},{\"dni\":\"04918298R\",\"firstname\":\"Jos\\u00e9 Manuel\",\"lastname\":\"Quintanilla Jasso\",\"birthdate\":\"1990-06-04\",\"gender\":\"male\",\"email\":\"villanueva.naia@example.net\",\"phone\":\"913 22 7682\",\"address\":\"Carrer Hurtado, 479, 63\\u00ba E\",\"city\":\"Vall Garrido\",\"state\":\"Burgos\"},{\"dni\":\"65235672J\",\"firstname\":\"Samuel\",\"lastname\":\"Marrero Y\\u00e1\\u00f1ez\",\"birthdate\":\"1977-12-17\",\"gender\":\"male\",\"email\":\"mguerra@example.org\",\"phone\":\"+34 935955085\",\"address\":\"Travessera Pacheco, 9, 1\\u00ba C\",\"city\":\"La Meraz\",\"state\":\"La Rioja\"},{\"dni\":\"58713995D\",\"firstname\":\"Alejandro\",\"lastname\":\"Urbina Armend\\u00e1riz\",\"birthdate\":\"1983-09-26\",\"gender\":\"male\",\"email\":\"lucio.yaiza@example.net\",\"phone\":\"966-722190\",\"address\":\"Plaza Delarosa, 848, 3\\u00ba 7\\u00ba\",\"city\":\"Los Vila del Pened\\u00e8s\",\"state\":\"Badajoz\"},{\"dni\":\"25706732T\",\"firstname\":\"Gloria\",\"lastname\":\"Polo T\\u00f3rrez\",\"birthdate\":\"2005-06-25\",\"gender\":\"female\",\"email\":\"angel.verduzco@example.com\",\"phone\":\"+34 942 438730\",\"address\":\"Cami\\u00f1o Beatriz, 5, 4\\u00ba 9\\u00ba\",\"city\":\"Sim\\u00f3n de Arriba\",\"state\":\"Albacete\"},{\"dni\":\"84084977J\",\"firstname\":\"Marcos\",\"lastname\":\"Griego Jim\\u00e9nez\",\"birthdate\":\"1973-07-22\",\"gender\":\"male\",\"email\":\"irene.carranza@example.net\",\"phone\":\"+34 965-43-3598\",\"address\":\"Ruela Armenta, 946, Bajos\",\"city\":\"Vall Fonseca\",\"state\":\"Guipuzkoa\"},{\"dni\":\"29430327X\",\"firstname\":\"Beatriz\",\"lastname\":\"Alba Tamayo\",\"birthdate\":\"1978-12-01\",\"gender\":\"female\",\"email\":\"daniela56@example.org\",\"phone\":\"+34 902 19 5219\",\"address\":\"Pla\\u00e7a Carrasco, 34, Bajos\",\"city\":\"Marco Baja\",\"state\":\"Soria\"},{\"dni\":\"52764191Y\",\"firstname\":\"Juan\",\"lastname\":\"Ch\\u00e1vez Sancho\",\"birthdate\":\"2001-08-14\",\"gender\":\"male\",\"email\":\"rlazaro@example.com\",\"phone\":\"+34 988533369\",\"address\":\"Camino Benavides, 2, 8\\u00ba F\",\"city\":\"El Ben\\u00edtez\",\"state\":\"Ja\\u00e9n\"},{\"dni\":\"24694494S\",\"firstname\":\"Juana\",\"lastname\":\"Esquivel Monta\\u00f1ez\",\"birthdate\":\"1988-10-13\",\"gender\":\"female\",\"email\":\"teran.antonio@example.org\",\"phone\":\"+34 947 90 3250\",\"address\":\"Traves\\u00eda Rafael, 4, 55\\u00ba B\",\"city\":\"Las Canales del Bages\",\"state\":\"Huelva\"},{\"dni\":\"59729242J\",\"firstname\":\"Aaron\",\"lastname\":\"Alcala Moral\",\"birthdate\":\"1989-04-11\",\"gender\":\"male\",\"email\":\"matias.joseantonio@example.org\",\"phone\":\"981088510\",\"address\":\"Pla\\u00e7a Marco, 84, 60\\u00ba A\",\"city\":\"Las Ram\\u00f3n\",\"state\":\"Pontevedra\"},{\"dni\":\"10215425K\",\"firstname\":\"Alejandro\",\"lastname\":\"Lucero Loya\",\"birthdate\":\"1981-06-01\",\"gender\":\"male\",\"email\":\"regalado.pablo@example.com\",\"phone\":\"933179687\",\"address\":\"Ruela Martina, 38, 51\\u00ba 3\\u00ba\",\"city\":\"Os Maya\",\"state\":\"Pontevedra\"},{\"dni\":\"63062591H\",\"firstname\":\"Helena\",\"lastname\":\"Bermejo Covarrubias\",\"birthdate\":\"2001-08-23\",\"gender\":\"female\",\"email\":\"olivia.corral@example.org\",\"phone\":\"+34 913-125955\",\"address\":\"Passeig Sisneros, 513, 9\\u00ba\",\"city\":\"El Alem\\u00e1n\",\"state\":\"Las Palmas\"},{\"dni\":\"66696727Q\",\"firstname\":\"Rayan\",\"lastname\":\"Madrid Domingo\",\"birthdate\":\"1989-11-22\",\"gender\":\"male\",\"email\":\"rpuga@example.com\",\"phone\":\"+34 932 17 3485\",\"address\":\"Passeig Ignacio, 1, 49\\u00ba 8\\u00ba\",\"city\":\"L' Alonso\",\"state\":\"Toledo\"},{\"dni\":\"08546547T\",\"firstname\":\"Clara\",\"lastname\":\"Salazar Pedraza\",\"birthdate\":\"1978-05-04\",\"gender\":\"female\",\"email\":\"vcardona@example.com\",\"phone\":\"+34 995-219411\",\"address\":\"Travessera Nieves, 8, Bajo 4\\u00ba\",\"city\":\"Las Casta\\u00f1o de la Sierra\",\"state\":\"Zamora\"},{\"dni\":\"00110402W\",\"firstname\":\"Miguel \\u00c1ngel\",\"lastname\":\"Esteve Sola\",\"birthdate\":\"1996-02-27\",\"gender\":\"male\",\"email\":\"serna.juanjose@example.net\",\"phone\":\"+34 999570382\",\"address\":\"Cami\\u00f1o Peres, 8, \\u00c1tico 0\\u00ba\",\"city\":\"Os Palacios de Arriba\",\"state\":\"Barcelona\"},{\"dni\":\"98227659H\",\"firstname\":\"Alex\",\"lastname\":\"Iglesias Perea\",\"birthdate\":\"2001-09-04\",\"gender\":\"male\",\"email\":\"casado.alexia@example.com\",\"phone\":\"+34 983-583895\",\"address\":\"Carrer Santiago, 4, 2\\u00ba D\",\"city\":\"San Gamboa\",\"state\":\"Valencia\"},{\"dni\":\"06096967N\",\"firstname\":\"Laia\",\"lastname\":\"Centeno Calvillo\",\"birthdate\":\"2002-01-26\",\"gender\":\"female\",\"email\":\"adam.arellano@example.net\",\"phone\":\"+34 909072734\",\"address\":\"Camino Elena, 8, 83\\u00ba D\",\"city\":\"Andreu del Pened\\u00e8s\",\"state\":\"Barcelona\"},{\"dni\":\"67704474H\",\"firstname\":\"Marta\",\"lastname\":\"Mercado Ferrer\",\"birthdate\":\"1993-02-18\",\"gender\":\"female\",\"email\":\"guajardo.miriam@example.org\",\"phone\":\"+34 912 78 3958\",\"address\":\"Ronda Pedro, 34, 52\\u00ba D\",\"city\":\"Ramos del Vall\\u00e8s\",\"state\":\"Albacete\"},{\"dni\":\"24878195S\",\"firstname\":\"Aaron\",\"lastname\":\"Santacruz Far\\u00edas\",\"birthdate\":\"1985-09-04\",\"gender\":\"male\",\"email\":\"cpascual@example.com\",\"phone\":\"+34 968-11-9607\",\"address\":\"Avinguda Leire, 415, 6\\u00ba B\",\"city\":\"Canales Baja\",\"state\":\"Las Palmas\"},{\"dni\":\"72006782S\",\"firstname\":\"Yago\",\"lastname\":\"Perea Benav\\u00eddez\",\"birthdate\":\"1991-03-18\",\"gender\":\"male\",\"email\":\"eric.bravo@example.org\",\"phone\":\"983 012939\",\"address\":\"Camino Rom\\u00e1n, 563, Bajos\",\"city\":\"A Carretero\",\"state\":\"Valencia\"},{\"dni\":\"42315803N\",\"firstname\":\"Guillem\",\"lastname\":\"Carvajal Hidalgo\",\"birthdate\":\"1998-03-31\",\"gender\":\"male\",\"email\":\"badillo.alejandra@example.net\",\"phone\":\"+34 936 478210\",\"address\":\"Avenida Baeza, 807, 46\\u00ba F\",\"city\":\"As Arag\\u00f3n de Arriba\",\"state\":\"La Rioja\"},{\"dni\":\"84232686Q\",\"firstname\":\"Ander\",\"lastname\":\"Mac\\u00edas G\\u00e1mez\",\"birthdate\":\"2006-07-04\",\"gender\":\"male\",\"email\":\"elsa94@example.com\",\"phone\":\"+34 980-023014\",\"address\":\"Calle Santiago, 83, 03\\u00ba 0\\u00ba\",\"city\":\"Res\\u00e9ndez de Lemos\",\"state\":\"Burgos\"},{\"dni\":\"53411713D\",\"firstname\":\"Andrea\",\"lastname\":\"Campos Marroqu\\u00edn\",\"birthdate\":\"1981-12-11\",\"gender\":\"female\",\"email\":\"xmoreno@example.net\",\"phone\":\"+34 969-13-9988\",\"address\":\"Passeig Cort\\u00e9s, 549, 27\\u00ba E\",\"city\":\"La Carrero\",\"state\":\"Huelva\"}]"
+                  }
+                },
+                "description": null
+              },
+              {
+                "v": "17",
+                "name": "show customer",
+                "method": "GET",
+                "endpoint": "http://127.0.0.1:8000/api/panel/clientes/customer/75283198N",
+                "params": [],
+                "headers": [],
+                "preRequestScript": "",
+                "testScript": "",
+                "auth": {
+                  "authType": "bearer",
+                  "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                  "authActive": true
+                },
+                "body": {
+                  "contentType": null,
+                  "body": null
+                },
+                "requestVariables": [],
+                "responses": {
+                  "show customer": {
+                    "name": "show customer",
+                    "originalRequest": {
+                      "v": "6",
+                      "name": "show customer",
+                      "method": "GET",
+                      "endpoint": "http://127.0.0.1:8000/api/panel/clientes/customer/75283198N",
+                      "headers": [],
+                      "params": [],
+                      "body": {
+                        "contentType": null,
+                        "body": null
+                      },
+                      "auth": {
+                        "authType": "bearer",
+                        "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                        "authActive": true
+                      },
+                      "requestVariables": []
+                    },
+                    "status": "200 OK",
+                    "code": 200,
+                    "headers": [
+                      {
+                        "key": "Host",
+                        "value": "127.0.0.1:8000"
+                      },
+                      {
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "*"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Cache-Control",
+                        "value": "no-cache, private"
+                      },
+                      {
+                        "key": "X-Powered-By",
+                        "value": "PHP/8.5.4"
+                      },
+                      {
+                        "key": "Date",
+                        "value": "Mon, 13 Apr 2026 17:46:40 GMT"
+                      },
+                      {
+                        "key": "Connection",
+                        "value": "close"
+                      }
+                    ],
+                    "body": "{\"dni\":\"75283198N\",\"firstname\":\"Carla\",\"lastname\":\"Calvillo Sarabia\",\"birthdate\":\"1970-07-24\",\"gender\":\"female\",\"email\":\"enrique.rojas@example.com\",\"phone\":\"911 07 4044\",\"address\":\"Calle Gerard, 114, 83\\u00ba C\",\"city\":\"Villa Rinc\\u00f3n\",\"state\":\"Tarragona\"}"
+                  }
+                },
+                "description": null
+              },
+              {
+                "v": "17",
+                "name": "new customer",
+                "method": "POST",
+                "endpoint": "http://127.0.0.1:8000/api/panel/clientes/customer",
+                "params": [],
+                "headers": [],
+                "preRequestScript": "",
+                "testScript": "",
+                "auth": {
+                  "authType": "bearer",
+                  "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                  "authActive": true
+                },
+                "body": {
+                  "contentType": "application/json",
+                  "body": "{\n  \"dni\": \"88866633N\",\n  \"firstname\": \"qqqqqqqqq\",\n  \"lastname\": \"qqqqqqqqqqqqqqa\",\n  \"birthdate\": \"1970-07-24\",\n  \"gender\": \"female\",\n  \"email\": \"enqqqqqqqqqqs@example.com\",\n  \"phone\": \"911 07 4044\",\n  \"address\": \"Cqqqqqqqqqqq\",\n  \"city\": \"Villa Rincón\",\n  \"state\": \"Tarragona\"\n}"
+                },
+                "requestVariables": [],
+                "responses": {
+                  "new customer": {
+                    "name": "new customer",
+                    "originalRequest": {
+                      "v": "6",
+                      "name": "new customer",
+                      "method": "POST",
+                      "endpoint": "http://127.0.0.1:8000/api/panel/clientes/customer",
+                      "headers": [],
+                      "params": [],
+                      "body": {
+                        "contentType": "application/json",
+                        "body": "{\n  \"dni\": \"88866633N\",\n  \"firstname\": \"qqqqqqqqq\",\n  \"lastname\": \"qqqqqqqqqqqqqqa\",\n  \"birthdate\": \"1970-07-24\",\n  \"gender\": \"female\",\n  \"email\": \"enqqqqqqqqqqs@example.com\",\n  \"phone\": \"911 07 4044\",\n  \"address\": \"Cqqqqqqqqqqq\",\n  \"city\": \"Villa Rincón\",\n  \"state\": \"Tarragona\"\n}"
+                      },
+                      "auth": {
+                        "authType": "bearer",
+                        "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                        "authActive": true
+                      },
+                      "requestVariables": []
+                    },
+                    "status": "201 Created",
+                    "code": 201,
+                    "headers": [
+                      {
+                        "key": "Connection",
+                        "value": "close"
+                      },
+                      {
+                        "key": "Host",
+                        "value": "127.0.0.1:8000"
+                      },
+                      {
+                        "key": "Date",
+                        "value": "Mon, 13 Apr 2026 17:57:57 GMT"
+                      },
+                      {
+                        "key": "Cache-Control",
+                        "value": "no-cache, private"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "*"
+                      },
+                      {
+                        "key": "X-Powered-By",
+                        "value": "PHP/8.5.4"
+                      }
+                    ],
+                    "body": "{\"dni\":\"88866633N\",\"firstname\":\"qqqqqqqqq\",\"lastname\":\"qqqqqqqqqqqqqqa\",\"birthdate\":\"1970-07-24\",\"gender\":\"female\",\"email\":\"enqqqqqqqqqqs@example.com\",\"phone\":\"911 07 4044\",\"address\":\"Cqqqqqqqqqqq\",\"city\":\"Villa Rinc\\u00f3n\",\"state\":\"Tarragona\"}"
+                  }
+                },
+                "description": null
+              },
+              {
+                "v": "17",
+                "name": "delete customer",
+                "method": "DELETE",
+                "endpoint": "http://127.0.0.1:8000/api/panel/clientes/customer/88866633N",
+                "params": [],
+                "headers": [],
+                "preRequestScript": "",
+                "testScript": "",
+                "auth": {
+                  "authType": "bearer",
+                  "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                  "authActive": true
+                },
+                "body": {
+                  "contentType": null,
+                  "body": null
+                },
+                "requestVariables": [],
+                "responses": {
+                  "delete customer": {
+                    "name": "delete customer",
+                    "originalRequest": {
+                      "v": "6",
+                      "name": "delete customer",
+                      "method": "DELETE",
+                      "endpoint": "http://127.0.0.1:8000/api/panel/clientes/customer/88866633N",
+                      "headers": [],
+                      "params": [],
+                      "body": {
+                        "contentType": null,
+                        "body": null
+                      },
+                      "auth": {
+                        "authType": "bearer",
+                        "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                        "authActive": true
+                      },
+                      "requestVariables": []
+                    },
+                    "status": "200 OK",
+                    "code": 200,
+                    "headers": [
+                      {
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "*"
+                      },
+                      {
+                        "key": "Cache-Control",
+                        "value": "no-cache, private"
+                      },
+                      {
+                        "key": "Host",
+                        "value": "127.0.0.1:8000"
+                      },
+                      {
+                        "key": "Connection",
+                        "value": "close"
+                      },
+                      {
+                        "key": "X-Powered-By",
+                        "value": "PHP/8.5.4"
+                      },
+                      {
+                        "key": "Date",
+                        "value": "Mon, 13 Apr 2026 17:58:58 GMT"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": "{\"message\":\"Customer deleted successfully\"}"
+                  }
+                },
+                "description": null
+              }
+            ],
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "headers": [],
+            "variables": [],
+            "description": null
+          },
+          {
+            "v": 11,
+            "name": "almacen",
+            "folders": [],
+            "requests": [
+              {
+                "v": "17",
+                "name": "stock actual",
+                "method": "GET",
+                "endpoint": "http://127.0.0.1:8000/api/panel/almacen/inventory",
+                "params": [],
+                "headers": [],
+                "preRequestScript": "",
+                "testScript": "",
+                "auth": {
+                  "authType": "bearer",
+                  "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                  "authActive": true
+                },
+                "body": {
+                  "contentType": null,
+                  "body": null
+                },
+                "requestVariables": [],
+                "responses": {
+                  "stock actual": {
+                    "name": "stock actual",
+                    "originalRequest": {
+                      "v": "6",
+                      "name": "stock actual",
+                      "method": "GET",
+                      "endpoint": "http://127.0.0.1:8000/api/panel/almacen/inventory",
+                      "headers": [],
+                      "params": [],
+                      "body": {
+                        "contentType": null,
+                        "body": null
+                      },
+                      "auth": {
+                        "authType": "bearer",
+                        "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                        "authActive": true
+                      },
+                      "requestVariables": []
+                    },
+                    "status": "200 OK",
+                    "code": 200,
+                    "headers": [
+                      {
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "*"
+                      },
+                      {
+                        "key": "Connection",
+                        "value": "close"
+                      },
+                      {
+                        "key": "Host",
+                        "value": "127.0.0.1:8000"
+                      },
+                      {
+                        "key": "Cache-Control",
+                        "value": "no-cache, private"
+                      },
+                      {
+                        "key": "X-Powered-By",
+                        "value": "PHP/8.5.4"
+                      },
+                      {
+                        "key": "Date",
+                        "value": "Mon, 13 Apr 2026 20:44:44 GMT"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": "[{\"product_id\":\"A-001\",\"product_name\":\"Muzzarella\",\"quantity\":30},{\"product_id\":\"A-002\",\"product_name\":\"Napolitana\",\"quantity\":6},{\"product_id\":\"A-003\",\"product_name\":\"Fugazza\",\"quantity\":22},{\"product_id\":\"A-004\",\"product_name\":\"Fugazzetta\",\"quantity\":25},{\"product_id\":\"A-005\",\"product_name\":\"Jam\\u00f3n y Morr\\u00f3n\",\"quantity\":29},{\"product_id\":\"A-006\",\"product_name\":\"Calabresa\",\"quantity\":37},{\"product_id\":\"A-007\",\"product_name\":\"Margarita\",\"quantity\":36},{\"product_id\":\"A-008\",\"product_name\":\"Pepperoni\",\"quantity\":32},{\"product_id\":\"A-009\",\"product_name\":\"Marinara\",\"quantity\":32},{\"product_id\":\"A-010\",\"product_name\":\"Prosciutto\",\"quantity\":11},{\"product_id\":\"B-001\",\"product_name\":\"Cuatro Quesos\",\"quantity\":13},{\"product_id\":\"B-002\",\"product_name\":\"Hawaiana\",\"quantity\":40},{\"product_id\":\"B-003\",\"product_name\":\"Jam\\u00f3n y Palmitos\",\"quantity\":21},{\"product_id\":\"B-004\",\"product_name\":\"R\\u00facula y Crudo\",\"quantity\":7},{\"product_id\":\"B-005\",\"product_name\":\"Champignones\",\"quantity\":37},{\"product_id\":\"B-006\",\"product_name\":\"Barbacoa\",\"quantity\":16},{\"product_id\":\"B-007\",\"product_name\":\"Carbonara\",\"quantity\":38},{\"product_id\":\"B-008\",\"product_name\":\"Vegetariana\",\"quantity\":19},{\"product_id\":\"B-009\",\"product_name\":\"Pollo y Catupiry\",\"quantity\":32},{\"product_id\":\"B-010\",\"product_name\":\"Cuatro Estaciones\",\"quantity\":15},{\"product_id\":\"B-011\",\"product_name\":\"Fugazzetta Rellena\",\"quantity\":23},{\"product_id\":\"B-012\",\"product_name\":\"Tex-Mex\",\"quantity\":19},{\"product_id\":\"B-013\",\"product_name\":\"Caprese\",\"quantity\":32},{\"product_id\":\"B-014\",\"product_name\":\"Panceta y Huevo\",\"quantity\":22},{\"product_id\":\"B-015\",\"product_name\":\"Pesto y Nueces\",\"quantity\":37},{\"product_id\":\"C-001\",\"product_name\":\"Carne Suave\",\"quantity\":13},{\"product_id\":\"C-002\",\"product_name\":\"Carne Picante\",\"quantity\":24},{\"product_id\":\"C-003\",\"product_name\":\"Jam\\u00f3n y Queso\",\"quantity\":33},{\"product_id\":\"C-004\",\"product_name\":\"Pollo\",\"quantity\":25},{\"product_id\":\"C-005\",\"product_name\":\"Humita\",\"quantity\":13},{\"product_id\":\"C-006\",\"product_name\":\"Roquefort y Apio\",\"quantity\":22},{\"product_id\":\"C-007\",\"product_name\":\"Caprese (Emp)\",\"quantity\":28},{\"product_id\":\"C-008\",\"product_name\":\"Verdura\",\"quantity\":7},{\"product_id\":\"C-009\",\"product_name\":\"Cebolla y Queso\",\"quantity\":7},{\"product_id\":\"C-010\",\"product_name\":\"Salchicha y Cheddar\",\"quantity\":13},{\"product_id\":\"D-001\",\"product_name\":\"Fain\\u00e1 Cl\\u00e1sica\",\"quantity\":24},{\"product_id\":\"D-002\",\"product_name\":\"Fain\\u00e1 con Cebolla\",\"quantity\":39},{\"product_id\":\"D-003\",\"product_name\":\"Pan de Ajo (4u)\",\"quantity\":12},{\"product_id\":\"D-004\",\"product_name\":\"Bastones de Mozz.\",\"quantity\":8},{\"product_id\":\"D-005\",\"product_name\":\"Papas Fritas\",\"quantity\":33},{\"product_id\":\"D-006\",\"product_name\":\"Papas con Cheddar\",\"quantity\":32},{\"product_id\":\"D-007\",\"product_name\":\"Ensalada C\\u00e9sar\",\"quantity\":30},{\"product_id\":\"E-001\",\"product_name\":\"Agua Mineral\",\"quantity\":33},{\"product_id\":\"E-002\",\"product_name\":\"Gaseosa 500ml\",\"quantity\":15},{\"product_id\":\"E-003\",\"product_name\":\"Gaseosa 1.5L\",\"quantity\":10},{\"product_id\":\"E-004\",\"product_name\":\"Cerveza Lata\",\"quantity\":6},{\"product_id\":\"E-005\",\"product_name\":\"Cerveza 1L\",\"quantity\":31},{\"product_id\":\"E-006\",\"product_name\":\"Vino de la Casa\",\"quantity\":10},{\"product_id\":\"E-007\",\"product_name\":\"Limonada Casera\",\"quantity\":36},{\"product_id\":\"E-008\",\"product_name\":\"Jugo Natural\",\"quantity\":32}]"
+                  }
+                },
+                "description": null
+              },
+              {
+                "v": "17",
+                "name": "modificar stock ",
+                "method": "PATCH",
+                "endpoint": "http://127.0.0.1:8000/api/panel/almacen/inventory/A-002",
+                "params": [],
+                "headers": [],
+                "preRequestScript": "",
+                "testScript": "",
+                "auth": {
+                  "authType": "bearer",
+                  "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                  "authActive": true
+                },
+                "body": {
+                  "contentType": "application/json",
+                  "body": "{\n  \"quantity\": 30\n}"
+                },
+                "requestVariables": [],
+                "responses": {
+                  "modificar stock": {
+                    "name": "modificar stock",
+                    "originalRequest": {
+                      "v": "6",
+                      "name": "modificar stock ",
+                      "method": "PATCH",
+                      "endpoint": "http://127.0.0.1:8000/api/panel/almacen/inventory/A-002",
+                      "headers": [],
+                      "params": [],
+                      "body": {
+                        "contentType": "application/json",
+                        "body": "{\n  \"quantity\": 30\n}"
+                      },
+                      "auth": {
+                        "authType": "bearer",
+                        "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                        "authActive": true
+                      },
+                      "requestVariables": []
+                    },
+                    "status": "200 OK",
+                    "code": 200,
+                    "headers": [
+                      {
+                        "key": "X-Powered-By",
+                        "value": "PHP/8.5.4"
+                      },
+                      {
+                        "key": "Cache-Control",
+                        "value": "no-cache, private"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Connection",
+                        "value": "close"
+                      },
+                      {
+                        "key": "Host",
+                        "value": "127.0.0.1:8000"
+                      },
+                      {
+                        "key": "Date",
+                        "value": "Mon, 13 Apr 2026 21:01:42 GMT"
+                      },
+                      {
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "*"
+                      }
+                    ],
+                    "body": "{\"message\":\"Stock de A-002 actualizado para tu tienda.\",\"inventory\":{\"store_id\":\"AA-AAA-00\",\"product_id\":\"A-002\",\"quantity\":30}}"
+                  }
+                },
+                "description": null
+              }
+            ],
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "headers": [],
+            "variables": [],
+            "description": null
+          },
+          {
+            "v": 11,
+            "name": "buscador",
+            "folders": [],
+            "requests": [
+              {
+                "v": "17",
+                "name": "all products",
+                "method": "GET",
+                "endpoint": "http://127.0.0.1:8000/api/panel/buscador/product",
+                "params": [],
+                "headers": [],
+                "preRequestScript": "",
+                "testScript": "",
+                "auth": {
+                  "authType": "bearer",
+                  "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                  "authActive": true
+                },
+                "body": {
+                  "contentType": null,
+                  "body": null
+                },
+                "requestVariables": [],
+                "responses": {
+                  "all products": {
+                    "name": "all products",
+                    "originalRequest": {
+                      "v": "6",
+                      "name": "all products",
+                      "method": "GET",
+                      "endpoint": "http://127.0.0.1:8000/api/panel/buscador/product",
+                      "headers": [],
+                      "params": [],
+                      "body": {
+                        "contentType": null,
+                        "body": null
+                      },
+                      "auth": {
+                        "authType": "bearer",
+                        "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                        "authActive": true
+                      },
+                      "requestVariables": []
+                    },
+                    "status": "200 OK",
+                    "code": 200,
+                    "headers": [
+                      {
+                        "key": "Connection",
+                        "value": "close"
+                      },
+                      {
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "*"
+                      },
+                      {
+                        "key": "Date",
+                        "value": "Mon, 13 Apr 2026 19:00:38 GMT"
+                      },
+                      {
+                        "key": "Cache-Control",
+                        "value": "no-cache, private"
+                      },
+                      {
+                        "key": "Host",
+                        "value": "127.0.0.1:8000"
+                      },
+                      {
+                        "key": "X-Powered-By",
+                        "value": "PHP/8.5.4"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": "[{\"product_id\":\"A-001\",\"category_id\":\"A\",\"product_name\":\"Muzzarella\",\"description\":\"salsa de tomate, muzzarella, aceitunas\",\"product_price\":\"15.50\"},{\"product_id\":\"A-002\",\"category_id\":\"A\",\"product_name\":\"Napolitana\",\"description\":\"Muzzarella, tomate en rodajas, ajo, perejil\",\"product_price\":\"18.20\"},{\"product_id\":\"A-003\",\"category_id\":\"A\",\"product_name\":\"Fugazza\",\"description\":\"Cebolla en juliana, aceite de oliva, or\\u00e9gano\",\"product_price\":\"14.80\"},{\"product_id\":\"A-004\",\"category_id\":\"A\",\"product_name\":\"Fugazzetta\",\"description\":\"Cebolla con base de muzzarella\",\"product_price\":\"17.50\"},{\"product_id\":\"A-005\",\"category_id\":\"A\",\"product_name\":\"Jam\\u00f3n y Morr\\u00f3n\",\"description\":\"Muzzarella, jam\\u00f3n cocido, morrones asados\",\"product_price\":\"19.40\"},{\"product_id\":\"A-006\",\"category_id\":\"A\",\"product_name\":\"Calabresa\",\"description\":\"Muzzarella, longaniza calabresa, aceitunas negras\",\"product_price\":\"19.90\"},{\"product_id\":\"A-007\",\"category_id\":\"A\",\"product_name\":\"Margarita\",\"description\":\"Tomate, muzzarella fresca, albahaca\",\"product_price\":\"16.90\"},{\"product_id\":\"A-008\",\"category_id\":\"A\",\"product_name\":\"Pepperoni\",\"description\":\"Muzzarella y abundante pepperoni americano\",\"product_price\":\"20.50\"},{\"product_id\":\"A-009\",\"category_id\":\"A\",\"product_name\":\"Marinara\",\"description\":\"Salsa de tomate, ajo, aceite de oliva, or\\u00e9gano\",\"product_price\":\"14.00\"},{\"product_id\":\"A-010\",\"category_id\":\"A\",\"product_name\":\"Prosciutto\",\"description\":\"Muzzarella y jam\\u00f3n crudo de primera calidad\",\"product_price\":\"22.00\"},{\"product_id\":\"B-001\",\"category_id\":\"B\",\"product_name\":\"Cuatro Quesos\",\"description\":\"Muzzarella, parmesano, roquefort, provolone\",\"product_price\":\"21.80\"},{\"product_id\":\"B-002\",\"category_id\":\"B\",\"product_name\":\"Hawaiana\",\"description\":\"Muzzarella, jam\\u00f3n cocido y pi\\u00f1a\",\"product_price\":\"19.50\"},{\"product_id\":\"B-003\",\"category_id\":\"B\",\"product_name\":\"Jam\\u00f3n y Palmitos\",\"description\":\"Muzzarella, jam\\u00f3n, palmitos y salsa golf\",\"product_price\":\"22.50\"},{\"product_id\":\"B-004\",\"category_id\":\"B\",\"product_name\":\"R\\u00facula y Crudo\",\"description\":\"Muzzarella, jam\\u00f3n crudo, r\\u00facula, parmesano\",\"product_price\":\"23.40\"},{\"product_id\":\"B-005\",\"category_id\":\"B\",\"product_name\":\"Champignones\",\"description\":\"Salsa de tomate, muzzarella, hongos frescos\",\"product_price\":\"21.00\"},{\"product_id\":\"B-006\",\"category_id\":\"B\",\"product_name\":\"Barbacoa\",\"description\":\"Pollo, cebolla morada, salsa barbacoa\",\"product_price\":\"21.50\"},{\"product_id\":\"B-007\",\"category_id\":\"B\",\"product_name\":\"Carbonara\",\"description\":\"Crema, panceta, huevo, pimienta negra\",\"product_price\":\"22.20\"},{\"product_id\":\"B-008\",\"category_id\":\"B\",\"product_name\":\"Vegetariana\",\"description\":\"Mix de vegetales de estaci\\u00f3n asados\",\"product_price\":\"18.90\"},{\"product_id\":\"B-009\",\"category_id\":\"B\",\"product_name\":\"Pollo y Catupiry\",\"description\":\"Pollo desmenuzado con queso crema suave\",\"product_price\":\"21.00\"},{\"product_id\":\"B-010\",\"category_id\":\"B\",\"product_name\":\"Cuatro Estaciones\",\"description\":\"Cuatro secciones con distintos ingredientes\",\"product_price\":\"20.80\"},{\"product_id\":\"B-011\",\"category_id\":\"B\",\"product_name\":\"Fugazzetta Rellena\",\"description\":\"Doble masa rellena con muzzarella y cebolla\",\"product_price\":\"24.50\"},{\"product_id\":\"B-012\",\"category_id\":\"B\",\"product_name\":\"Tex-Mex\",\"description\":\"Carne picada, jalape\\u00f1os, cheddar, cebolla\",\"product_price\":\"22.80\"},{\"product_id\":\"B-013\",\"category_id\":\"B\",\"product_name\":\"Caprese\",\"description\":\"Muzzarella, tomate cherry, albahaca fresca\",\"product_price\":\"18.50\"},{\"product_id\":\"B-014\",\"category_id\":\"B\",\"product_name\":\"Panceta y Huevo\",\"description\":\"Muzzarella, panceta crocante, huevo frito\",\"product_price\":\"21.90\"},{\"product_id\":\"B-015\",\"category_id\":\"B\",\"product_name\":\"Pesto y Nueces\",\"description\":\"Muzzarella, pesto genov\\u00e9s y nueces picadas\",\"product_price\":\"20.40\"},{\"product_id\":\"C-001\",\"category_id\":\"C\",\"product_name\":\"Carne Suave\",\"description\":\"Carne vacuna, cebolla, condimentos cl\\u00e1sicos\",\"product_price\":\"1.80\"},{\"product_id\":\"C-002\",\"category_id\":\"C\",\"product_name\":\"Carne Picante\",\"description\":\"Carne vacuna con aj\\u00ed molido y piment\\u00f3n\",\"product_price\":\"1.80\"},{\"product_id\":\"C-003\",\"category_id\":\"C\",\"product_name\":\"Jam\\u00f3n y Queso\",\"description\":\"Jam\\u00f3n cocido y mezcla de quesos derretidos\",\"product_price\":\"1.70\"},{\"product_id\":\"C-004\",\"category_id\":\"C\",\"product_name\":\"Pollo\",\"description\":\"Pollo desmechado con verdeo y huevo\",\"product_price\":\"1.75\"},{\"product_id\":\"C-005\",\"category_id\":\"C\",\"product_name\":\"Humita\",\"description\":\"Choclo cremoso, salsa blanca y queso\",\"product_price\":\"1.70\"},{\"product_id\":\"C-006\",\"category_id\":\"C\",\"product_name\":\"Roquefort y Apio\",\"description\":\"Queso azul, muzzarella y apio picado\",\"product_price\":\"1.90\"},{\"product_id\":\"C-007\",\"category_id\":\"C\",\"product_name\":\"Caprese (Emp)\",\"description\":\"Tomate, albahaca y muzzarella\",\"product_price\":\"1.75\"},{\"product_id\":\"C-008\",\"category_id\":\"C\",\"product_name\":\"Verdura\",\"description\":\"Espinaca, salsa blanca y parmesano\",\"product_price\":\"1.70\"},{\"product_id\":\"C-009\",\"category_id\":\"C\",\"product_name\":\"Cebolla y Queso\",\"description\":\"Abundante cebolla caramelizada y muzzarella\",\"product_price\":\"1.70\"},{\"product_id\":\"C-010\",\"category_id\":\"C\",\"product_name\":\"Salchicha y Cheddar\",\"description\":\"Salchicha tipo viena y queso cheddar\",\"product_price\":\"1.85\"},{\"product_id\":\"D-001\",\"category_id\":\"D\",\"product_name\":\"Fain\\u00e1 Cl\\u00e1sica\",\"description\":\"Porci\\u00f3n de harina de garbanzos tradicional\",\"product_price\":\"2.50\"},{\"product_id\":\"D-002\",\"category_id\":\"D\",\"product_name\":\"Fain\\u00e1 con Cebolla\",\"description\":\"Fain\\u00e1 cubierta con cebolla crocante\",\"product_price\":\"2.80\"},{\"product_id\":\"D-003\",\"category_id\":\"D\",\"product_name\":\"Pan de Ajo (4u)\",\"description\":\"Rodajas de pan horneadas con mantequilla de ajo\",\"product_price\":\"3.20\"},{\"product_id\":\"D-004\",\"category_id\":\"D\",\"product_name\":\"Bastones de Mozz.\",\"description\":\"Deditos de queso empanizados y fritos\",\"product_price\":\"4.50\"},{\"product_id\":\"D-005\",\"category_id\":\"D\",\"product_name\":\"Papas Fritas\",\"description\":\"Porci\\u00f3n grande de papas cl\\u00e1sicas\",\"product_price\":\"4.00\"},{\"product_id\":\"D-006\",\"category_id\":\"D\",\"product_name\":\"Papas con Cheddar\",\"description\":\"Papas fritas con salsa cheddar y panceta\",\"product_price\":\"5.20\"},{\"product_id\":\"D-007\",\"category_id\":\"D\",\"product_name\":\"Ensalada C\\u00e9sar\",\"description\":\"Lechuga, pollo, croutons, aderezo c\\u00e9sar\",\"product_price\":\"6.50\"},{\"product_id\":\"E-001\",\"category_id\":\"E\",\"product_name\":\"Agua Mineral\",\"description\":\"Con o sin gas (500ml)\",\"product_price\":\"1.50\"},{\"product_id\":\"E-002\",\"category_id\":\"E\",\"product_name\":\"Gaseosa 500ml\",\"description\":\"L\\u00ednea Coca-Cola o similar\",\"product_price\":\"1.80\"},{\"product_id\":\"E-003\",\"category_id\":\"E\",\"product_name\":\"Gaseosa 1.5L\",\"description\":\"Ideal para compartir en mesa\",\"product_price\":\"3.50\"},{\"product_id\":\"E-004\",\"category_id\":\"E\",\"product_name\":\"Cerveza Lata\",\"description\":\"Variedad rubia o roja (473ml)\",\"product_price\":\"2.80\"},{\"product_id\":\"E-005\",\"category_id\":\"E\",\"product_name\":\"Cerveza 1L\",\"description\":\"Botella retornable o descartable\",\"product_price\":\"4.50\"},{\"product_id\":\"E-006\",\"category_id\":\"E\",\"product_name\":\"Vino de la Casa\",\"description\":\"Tinto o blanco joven (750ml)\",\"product_price\":\"5.80\"},{\"product_id\":\"E-007\",\"category_id\":\"E\",\"product_name\":\"Limonada Casera\",\"description\":\"Con menta y jengibre (jarra)\",\"product_price\":\"3.90\"},{\"product_id\":\"E-008\",\"category_id\":\"E\",\"product_name\":\"Jugo Natural\",\"description\":\"Naranja exprimida en el momento\",\"product_price\":\"2.50\"}]"
+                  }
+                },
+                "description": null
+              },
+              {
+                "v": "17",
+                "name": "show products",
+                "method": "GET",
+                "endpoint": "http://127.0.0.1:8000/api/panel/buscador/product/A-005",
+                "params": [],
+                "headers": [],
+                "preRequestScript": "",
+                "testScript": "",
+                "auth": {
+                  "authType": "bearer",
+                  "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                  "authActive": true
+                },
+                "body": {
+                  "contentType": null,
+                  "body": null
+                },
+                "requestVariables": [],
+                "responses": {
+                  "show products": {
+                    "name": "show products",
+                    "originalRequest": {
+                      "v": "6",
+                      "name": "show products",
+                      "method": "GET",
+                      "endpoint": "http://127.0.0.1:8000/api/panel/buscador/product/A-005",
+                      "headers": [],
+                      "params": [],
+                      "body": {
+                        "contentType": null,
+                        "body": null
+                      },
+                      "auth": {
+                        "authType": "bearer",
+                        "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                        "authActive": true
+                      },
+                      "requestVariables": []
+                    },
+                    "status": "200 OK",
+                    "code": 200,
+                    "headers": [
+                      {
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "*"
+                      },
+                      {
+                        "key": "X-Powered-By",
+                        "value": "PHP/8.5.4"
+                      },
+                      {
+                        "key": "Host",
+                        "value": "127.0.0.1:8000"
+                      },
+                      {
+                        "key": "Cache-Control",
+                        "value": "no-cache, private"
+                      },
+                      {
+                        "key": "Connection",
+                        "value": "close"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Date",
+                        "value": "Mon, 13 Apr 2026 19:03:26 GMT"
+                      }
+                    ],
+                    "body": "{\"product_id\":\"A-005\",\"category_id\":\"A\",\"product_name\":\"Jam\\u00f3n y Morr\\u00f3n\",\"description\":\"Muzzarella, jam\\u00f3n cocido, morrones asados\",\"product_price\":\"19.40\"}"
+                  }
+                },
+                "description": null
+              }
+            ],
+            "auth": {
+              "authActive": true,
+              "authType": "inherit"
+            },
+            "headers": [],
+            "variables": [],
+            "description": null
+          },
+          {
+            "v": 11,
+            "name": "ventas",
+            "folders": [
+              {
+                "v": 11,
+                "name": "odenes",
+                "folders": [],
+                "requests": [
+                  {
+                    "v": "17",
+                    "name": "all orders",
+                    "method": "GET",
+                    "endpoint": "https://echo.hoppscotch.io",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "inherit",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {},
+                    "description": null
+                  },
+                  {
+                    "v": "17",
+                    "name": "show order",
+                    "method": "GET",
+                    "endpoint": "https://echo.hoppscotch.io",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "inherit",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {},
+                    "description": null
+                  },
+                  {
+                    "v": "17",
+                    "name": "anular orden",
+                    "method": "GET",
+                    "endpoint": "https://echo.hoppscotch.io",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "inherit",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {},
+                    "description": null
+                  }
+                ],
+                "auth": {
+                  "authType": "inherit",
+                  "authActive": true
+                },
+                "headers": [],
+                "variables": [],
+                "description": null
+              },
+              {
+                "v": 11,
+                "name": "venta detallada",
+                "folders": [],
+                "requests": [
+                  {
+                    "v": "17",
+                    "name": "show order detaill",
+                    "method": "GET",
+                    "endpoint": "https://echo.hoppscotch.io",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "inherit",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {},
+                    "description": null
+                  },
+                  {
+                    "v": "17",
+                    "name": "edit order detaill",
+                    "method": "GET",
+                    "endpoint": "https://echo.hoppscotch.io",
+                    "params": [],
+                    "headers": [],
+                    "preRequestScript": "",
+                    "testScript": "",
+                    "auth": {
+                      "authType": "inherit",
+                      "authActive": true
+                    },
+                    "body": {
+                      "contentType": null,
+                      "body": null
+                    },
+                    "requestVariables": [],
+                    "responses": {},
+                    "description": null
+                  }
+                ],
+                "auth": {
+                  "authActive": true,
+                  "authType": "inherit"
+                },
+                "headers": [],
+                "variables": [],
+                "description": null
+              }
+            ],
+            "requests": [],
+            "auth": {
+              "authActive": true,
+              "authType": "inherit"
+            },
+            "headers": [],
+            "variables": [],
+            "description": null
+          }
+        ],
+        "requests": [
+          {
+            "v": "17",
+            "name": "main panel",
+            "method": "GET",
+            "endpoint": "http://127.0.0.1:8000/api/panel",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "bearer",
+              "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+              "authActive": true
+            },
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "requestVariables": [],
+            "responses": {
+              "main panel": {
+                "name": "main panel",
+                "originalRequest": {
+                  "v": "6",
+                  "name": "main panel",
+                  "method": "GET",
+                  "endpoint": "http://127.0.0.1:8000/api/panel",
+                  "headers": [],
+                  "params": [],
+                  "body": {
+                    "contentType": null,
+                    "body": null
+                  },
+                  "auth": {
+                    "authType": "bearer",
+                    "token": "7|8Cawo0DUV7VfVKkIJVRjTU508TnHRxHJu0GN8SfYbf30633b",
+                    "authActive": true
+                  },
+                  "requestVariables": []
+                },
+                "status": "200 OK",
+                "code": 200,
+                "headers": [
+                  {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Powered-By",
+                    "value": "PHP/8.5.4"
+                  },
+                  {
+                    "key": "Connection",
+                    "value": "close"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache, private"
+                  },
+                  {
+                    "key": "Date",
+                    "value": "Mon, 13 Apr 2026 19:58:17 GMT"
+                  },
+                  {
+                    "key": "Host",
+                    "value": "127.0.0.1:8000"
+                  }
+                ],
+                "body": "{\"message\":\"estas en dashboard\",\"user\":10000000,\"store_id\":\"AA-AAA-00\"}"
+              }
+            },
+            "description": null
+          },
+          {
+            "v": "17",
+            "name": "logout",
+            "method": "POST",
+            "endpoint": "http://127.0.0.1:8000/api/panel.logout",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "bearer",
+              "token": "6|gFH3LnZ2Es0s50yBpkVqxpgxrRctLQXMjCVwp04D78415af0",
+              "authActive": true
+            },
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "requestVariables": [],
+            "responses": {
+              "logout": {
+                "name": "logout",
+                "originalRequest": {
+                  "v": "6",
+                  "name": "logout",
+                  "method": "POST",
+                  "endpoint": "http://127.0.0.1:8000/api/panel.logout",
+                  "headers": [],
+                  "params": [],
+                  "body": {
+                    "contentType": null,
+                    "body": null
+                  },
+                  "auth": {
+                    "authType": "bearer",
+                    "token": "6|gFH3LnZ2Es0s50yBpkVqxpgxrRctLQXMjCVwp04D78415af0",
+                    "authActive": true
+                  },
+                  "requestVariables": []
+                },
+                "status": "200 OK",
+                "code": 200,
+                "headers": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Host",
+                    "value": "127.0.0.1:8000"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache, private"
+                  },
+                  {
+                    "key": "X-Powered-By",
+                    "value": "PHP/8.5.4"
+                  },
+                  {
+                    "key": "Date",
+                    "value": "Mon, 13 Apr 2026 16:37:36 GMT"
+                  },
+                  {
+                    "key": "Connection",
+                    "value": "close"
+                  },
+                  {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                  }
+                ],
+                "body": "{\"message\":\"Logout exitoso\"}"
+              }
+            },
+            "description": null
+          }
+        ],
+        "auth": {
+          "authType": "inherit",
+          "authActive": true
+        },
+        "headers": [],
+        "variables": [],
+        "description": null
+      }
+    ],
+    "requests": [],
+    "auth": {
+      "authActive": true,
+      "authType": "none"
+    },
+    "headers": [],
+    "variables": [],
+    "description": ""
+  }
+]

@@ -41,6 +41,6 @@ class StoreController extends Controller
     public function destroy(Store $store)
     {
         $store->delete();
-        return response()->json(['message' => 'Store deleted successfully'], 204);
+        return response()->json(['message' => 'Store deleted successfully'], 200);
     }
 }
