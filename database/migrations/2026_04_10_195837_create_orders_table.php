@@ -16,7 +16,7 @@ return new class extends Migration
             $table->date('order_date')->default(now()->toDateString());
             $table->string('customer_id'); 
             $table->string('store_id'); 
-            $table->string('staff_id'); 
+            $table->unsignedBigInteger('staff_id'); 
             $table->timestamps();
 
             $table->foreign('customer_id')->references('dni')->on('customers')->onDelete('cascade');

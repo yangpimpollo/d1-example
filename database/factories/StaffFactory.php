@@ -19,7 +19,7 @@ class StaffFactory extends Factory
         $gender = $fake->randomElement(['male', 'female']);
 
         return [
-            'dni'       => $fake->dni(),                              
+            'dni'       => $fake->numerify('########'),                             
             'firstname' => $fake->firstName($gender),
             'lastname'  => $fake->lastName() . ' ' . $fake->lastName(),
             'birthdate' => $fake->date('Y-m-d', '-18 years'),
