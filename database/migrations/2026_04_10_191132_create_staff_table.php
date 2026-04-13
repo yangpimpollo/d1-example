@@ -3,6 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 return new class extends Migration
 {
@@ -30,6 +32,19 @@ return new class extends Migration
 
             $table->foreign('store_id')->references('id')->on('stores')->onDelete('cascade');
         });
+
+        DB::table('staffs')->insert([
+            [
+                'dni' => 10000000,
+                'firstname' => 'default_name',
+                'lastname' => 'dafault_lastname',
+                'email' => 'default@example.com',
+                'store_id' => 'AA-AAA-00',
+                'role' => 'manager',
+                'password' => Hash::make('pizza123')
+            ]
+        ]);
+
     }
 
     /**

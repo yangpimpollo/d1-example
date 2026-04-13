@@ -7,43 +7,44 @@ use Illuminate\Http\Request;
 
 class OrderController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        return Order::all();
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'customer_id' => 'required|exists:customers,id|digits:8',
+            'staff_id' => 'required|exists:staff,id|digits:8',
+            'store_id' => 'required|exists:stores,id',
+            'order_date' => 'required|date'
+        ]);
+
+        return Order::create($request->all());
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(Order $order)
     {
-        //
+        return $order;
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, Order $order)
     {
-        //
+        $request->validate([
+            'customer_id' => 'sometimes|required|exists:customers,id',
+            'staff_id' => 'sometimes|required|exists:staff,id',
+            'store_id' => 'sometimes|required|exists:stores,id',
+            'order_date' => 'sometimes|required|date'
+        ]);
+
+        $order->update($request->all());
+        return $order;
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(Order $order)
     {
-        //
+        $order->delete();
+        return response()->json(['message' => 'Order deleted successfully'], 204);
     }
 }

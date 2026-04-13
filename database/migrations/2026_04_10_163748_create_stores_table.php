@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 return new class extends Migration
 {
@@ -18,6 +19,13 @@ return new class extends Migration
             $table->string('city')->nullable();
             $table->string('state')->nullable();
         });
+
+        DB::table('stores')->insert([
+            [
+                'id' => 'AA-AAA-00',
+                'store_name' => 'Default Store',
+            ]
+        ]);
     }
 
     /**

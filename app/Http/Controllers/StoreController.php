@@ -7,43 +7,40 @@ use Illuminate\Http\Request;
 
 class StoreController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        return Store::all();
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'id' => 'required|unique:stores,id',
+            'store_name' => 'required'
+        ]);
+
+        return Store::create($request->all());
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(Store $store)
     {
-        //
+        return $store;
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, Store $store)
     {
-        //
+        $request->validate([
+            'id' => 'sometimes|required|unique:stores,id',
+            'store_name' => 'sometimes|required'
+        ]);
+
+        $store->update($request->all());
+        return $store;
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(Store $store)
     {
-        //
+        $store->delete();
+        return response()->json(['message' => 'Store deleted successfully'], 204);
     }
 }
